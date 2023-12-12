@@ -1,0 +1,155 @@
+body {
+    background-image: url(./images/background4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    cursor: url(./images/pointer.png) 2 2, pointer;
+    font-family: 'Kalnia', serif;
+}
+
+.articleshovers:hover {
+    border: 0.1cm black solid;
+    border-collapse: collapse;
+}
+
+.vijandarese {
+    display: inline;
+    padding: 0%;
+    margin: 1%;
+}
+
+.boldfonts {
+    font-weight: bold;
+}
+
+.articlespaddings {
+    padding: 5%;
+    margin: 3% 8%;
+}
+
+.card {
+    border-collapse: collapse;
+    border-radius: 50px;
+    border: 0.1cm solid transparent;
+}
+
+hr {
+    margin: 1% 8%;
+}
+
+.paddingarticles {
+    padding: 1% 5%;
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+nav>ul {
+    text-align: center;
+}
+
+nav>ul>li {
+    display: inline;
+}
+
+span {
+    text-decoration: underline white;
+}
+
+.articleheader {
+    margin: 0% 5%;
+}
+
+.homenav {
+
+    border: 0.1cm solid black;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.homenav:hover {
+    background-color: rgb(49, 49, 156);
+    border-collapse: collapse;
+}
+
+.introducingsection {
+    background-color: rgb(63, 114, 134);
+}
+
+.introducingsection:hover {
+    background-color: rgb(0, 136, 239);
+}
+
+.schoolsection {
+    background-color: rgb(128, 83, 7);
+}
+
+.schoolsection:hover {
+    background-color: rgb(190, 146, 70);
+}
+
+.li1,
+.li2,
+.li3 {
+    background-color: rgb(255, 237, 237);
+    border: 0.1cm solid black;
+    border-radius: 0.2cm;
+    text-align: left;
+    color: black;
+}
+
+h4 {
+    color: gray;
+}
+
+.skillssections {
+    table-layout: inherit;
+    background-color: rgb(134, 121, 5);
+}
+
+.skillssections:hover {
+    background-color: rgb(215, 184, 62);
+}
+
+.procejtnavigations {
+    background-color: rgb(25, 0, 255);
+}
+
+.naviogationstotheprocejts {
+    text-align: left;
+    list-style: numbers;
+}
+
+.procejtnavigations:hover {
+    background-color: rgb(55, 194, 194);
+}
+
+footer {
+    background-color: gray;
+}
+
+th {
+    background-color: green;
+    color: black;
+}
+
+td {
+    background-color: rgb(64, 203, 64);
+    color: white;
+}
+
+.procejtimg:hover {
+    border: 0.2cm solid red;
+    width: 1000px;
+}
+
+.button {
+    color: white;
+    background-color: coral;
+    border: 0.1cm solid black;
+    text-decoration: none;
+}
