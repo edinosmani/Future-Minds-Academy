@@ -1,0 +1,29 @@
+/* GLOBAL COMMANDS */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CLASSES */
+.FlexContainer {
+    background-color: rgb(169, 169, 169);
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.FlexChild {
+    background-color: purple;
+    border-radius: 10px;
+    padding: 1em;
+    color: white;
+}
