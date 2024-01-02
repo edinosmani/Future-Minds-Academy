@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <!------------CSS-LINK----------->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--SYMBOL-LINK-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<!-----CSS-ICON------>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+    }
+</style>
+
+<body class="LoginBoddy">
+
+
+    <!------------HEADER----------->
+    <header class="dFlex loginHeader spacebetween alignitemsCenter">
+        <figure class="headerlogo">
+            <a href="./login.html">
+                <img src="./images/logo-removebg-preview.png" alt="Logo" width="100px">
+            </a>
+        </figure>
+
+        <nav>
+            <ul class="dFlex alignitemsCenter gap2rem">
+                <li class="loginlis"><a href="#" class="headerLink">About Us</a></li>
+                <li class="loginlis"><a href="#" class="headerLink">Terms of Use</a></li>
+                <li class="loginlis"><a href="#" class="headerLink">Policys</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!------------MAIN----------->
+    <main>
+        <div class="dFlex LoginCard gap2rem">
+            <section>
+                <figure class="headerlogo">
+                    <a href="./login.html">
+                        <img src="./images/logo-removebg-preview.png" alt="Logo" width="100px">
+                    </a>
+                </figure>
+
+                <figure class="LoginCardLogo">
+                    <img src="./images/bg.png" alt="empty cart" width="250px">
+                </figure>
+            </section>
+
+            <section class="LoginCardFunction">
+                <article class="dFlex flexdirectionColumn gap2rem justifycontetCenter">
+                    <h2>Log In</h2>
+
+                    <form>
+                        <div class="dFlex">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                            <label for="user"></label>
+                            <input type="text" id="user" name="user" placeholder="Username" maxlength="10"
+                                minlength="2">
+                        </div>
+
+                        <br>
+                        <br>
+
+
+                        <div class="dFlex">
+                            <span class="material-symbols-outlined">
+                                lock
+                            </span>
+                            <label for="password"></label>
+                            <input type="password" id="password" name="password" placeholder="Password" minlength="4"
+                                maxlength="12">
+                        </div>
+                    </form>
+
+
+                    <p>
+                        Forgot your password?<a href="#">Click Here</a>
+                    </p>
+
+                    <form action="home.html">
+                        <button class="LoginbuttonLoginPage">Log In</button>
+                    </form>
+
+                    <p>
+                        <a href="#">Create Account!</a>
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!------------FOOTER----------->
+    <footer>
+        <p>All Rights Reseverd</p>
+    </footer>
+</body>
+
+</html>
