@@ -1,0 +1,34 @@
+* {
+    margin: 0%;
+    padding-top: 0%;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+hr {
+    margin: 1% 33% 0% 33%;
+    border: 0.1cm solid red;
+}
+
+p {
+    height: 25vh;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+.graybackground {
+    background-color: gray;
+    color: white;
+}
+
+.whitesmokebackground {
+    background-color: wheat;
+    color: black;
+}
