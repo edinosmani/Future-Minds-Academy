@@ -1,0 +1,85 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.AlignItems {
+    align-items: center;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.AlignItemsCenter {
+    align-items: center;
+}
+
+.JustifySpaceBetween {
+    justify-content: space-between;
+}
+
+.justifycontentCenter {
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+/* ASIDE */
+
+aside {
+    background-image: url(./images/sidebar-1.jpg);
+    height: 100vh;
+    width: 50vh;
+    padding: 15px 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    position: fixed;
+}
+
+aside>ul>li {
+    padding: 5px 15px;
+}
+
+aside>ul>li {
+    margin: 25px;
+}
+
+.AsideBarDashboard {
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.AsideBarUlBorder:hover {
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+.AsideHr {
+    margin: 13px 0px;
+}
+
+aside>ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+.asidebaravatar {
+    width: 50px;
+    border-radius: 50%;
+}

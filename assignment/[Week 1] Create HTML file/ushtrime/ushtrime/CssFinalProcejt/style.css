@@ -1,0 +1,199 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(169, 166, 166, 0.49);
+    display: grid;
+    grid-template-columns: auto 2fr;
+    height: 100vh;
+}
+
+.JustifyContentStart {
+    justify-content: start;
+}
+
+.GlobalSalesbyTopLocationsFlagsAndInfo {
+    padding: 10%;
+    height: 100vh;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+
+li {
+    list-style: none;
+}
+
+.justifycontentEnd {
+    justify-content: end;
+}
+
+.spaceEvenly {
+    justify-content: space-evenly;
+}
+
+.justifycontentCenter {
+    justify-content: center;
+}
+
+.justifycontentEvenly {
+    justify-content: space-evenly;
+}
+
+.alignitemsCenter {
+    align-items: center;
+}
+
+.spacebetwen {
+    justify-content: space-between;
+}
+
+.BackgroundColorWhite {
+    background-color: white;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.fontcolorGray {
+    color: gray;
+}
+
+.cardsborders {
+    border: 5px solid transparent;
+    border-radius: 5px;
+    padding: 2% 3%;
+    margin: 5%;
+}
+
+.HeadersIconsCommands {
+    border-radius: 5%;
+    color: white;
+    padding: 25px;
+}
+
+.borderradius50 {
+    border: 50%;
+}
+
+.CardPositionRelative {
+    position: relative;
+}
+
+.PositoinTopLeft {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+/*HEADER  */
+header {
+    padding: 15px 25px;
+}
+
+.HeaderSearhBar {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid gray;
+    margin-right: 5px;
+}
+
+.HeaderSearhBar:hover {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid blueviolet;
+}
+
+.HeaderIconBorder {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* ASIDE */
+aside {
+    background-image: url(./images/sidebar-1.jpg);
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45vh;
+    height: 100vh;
+}
+
+.asidehr {
+    margin: 1px 15px;
+}
+
+/* MAIN */
+
+main {
+    overflow-y: scroll;
+    height: 100vh !important;
+}
+
+.FlagsImg {
+    width: 35px;
+}
+
+.HrOfGlobalSalesOfTopLocations {
+    margin: 10% 0% 0%;
+}
+
+.GlobalSalesbyTopLocationsInfos {
+    padding: 25px 15px;
+}
+
+.card1Map {
+    width: 75%;
+}
+
+.UnitedClassForAllFourContainers {
+    border-radius: 15px;
+    padding: 10%;
+    margin: 5% 0%;
+}
+
+.ContainerofFourArticlesOfPage {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    grid-template-rows: 100px 200px;
+    padding: 1% 5%;
+}
+
+.sectionOfBookingsAndWebVisit {
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.sectionOfRevenueAndFollowes {
+    grid-column: 4/6;
+    grid-row: 1/4;
+}
+
+
+.GlobalSalesbyTopLocationsIcon {
+    background-color: green;
+}
+
+.BookingsIcon {
+    background-color: yellow;
+}
+
+.RevenueIcon {
+    background-color: green;
+}
+
+.WebsiteVisitIcon {
+    background-color: palevioletred;
+}
+
+.FollowersIcon {
+    background-color: blue;
+}

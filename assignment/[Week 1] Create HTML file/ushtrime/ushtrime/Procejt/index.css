@@ -1,0 +1,119 @@
+body {
+    text-align: center;
+    background-color: white;
+}
+
+hr {
+    margin: 2% 20%;
+    border: 0.2cm solid rgba(0, 0, 0, 0.737);
+}
+
+.section1 {
+    background-color: antiquewhite;
+    border: 0.2cm solid black;
+    border-radius: 15px;
+    margin: 5% 35%;
+    padding: 3% 10%;
+}
+
+.forogotpasswordarticle {
+    width: 950px;
+    text-align: left;
+    margin: 2% 20%;
+    color: rgb(70, 70, 239);
+}
+
+.forogotpasswordarticle:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.loginbutton {
+    border: 0.1cm solid transparent;
+    width: 250px;
+    height: 30px;
+    padding: 0% 25%;
+    margin: 0% -33%;
+    color: white;
+    background-color: rgb(83, 83, 197);
+
+}
+
+.loginbutton:hover {
+    border: 0.1cm solid black;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+
+
+.singupbutton {
+    width: 250px;
+    height: 30px;
+    padding: 0% 25%;
+    margin: 0% -33%;
+    color: white;
+    background-color: rgb(215, 78, 78);
+}
+
+.singupbutton:hover {
+    border: 0.1cm solid black;
+    background-color: red;
+    font-weight: bold;
+}
+
+#name,
+#surname,
+#email,
+#phonenumber,
+#password,
+#birthday,
+#gender,
+#accepttermsanduses {
+    border: 0.1cm solid gray;
+    border-radius: 10px;
+    width: 200px;
+    padding: 0% 25%;
+    margin: 0% -33%;
+    text-align: left;
+    font-weight: bold;
+}
+
+#name:hover,
+#surname:hover,
+#email:hover,
+#phonenumber:hover,
+#password:hover,
+#birthday:hover,
+#gender:hover,
+#accepttermsanduses:hover,
+#search:hover {
+    border: 0.1cm solid black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+#search {
+    border: 0.1cm solid gray;
+    border-radius: 15px;
+    padding: 0.5%;
+    margin: 0% 0%;
+    width: 1200px;
+    height: 35px;
+}
+
+footer {
+    margin: 100% 45% 0% 45%;
+}
+
+nav>ul>li {
+    list-style: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: black;
+}

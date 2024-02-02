@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+header {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+
+section {
+    background-color: gray;
+}
+
+main {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 200px;
+    gap: 20px;
+}
+
+.card1 {
+    background-color: blue;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}

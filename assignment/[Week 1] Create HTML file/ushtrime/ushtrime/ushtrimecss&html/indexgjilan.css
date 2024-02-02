@@ -1,0 +1,29 @@
+.p {
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+}
+
+.t {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto Slab', serif;
+}
+
+.l {
+    color: rgba(25, 35, 226, 0.741);
+    font-family: 'Roboto Slab', serif;
+}
+
+.figcaption {
+    text-align: center;
+}
+
+.f {
+    color: red;
+}
+
+
+.main {
+    background-image: url(./images/histtoria.jpg);
+    background-color: rgba(255, 255, 255, 0.222);
+}

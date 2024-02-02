@@ -1,0 +1,92 @@
+.body1 {
+    background-color: rgb(211, 193, 193);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1% 10% 10% 10%;
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+}
+
+.body2 {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.main1 {
+    background-color: white;
+    color: black;
+    border: 0.1cm solid black;
+    border-radius: 5%;
+    margin: 5%;
+    padding: 5%;
+
+}
+
+.main1:hover {
+    color: black;
+    border: 0.2cm solid black;
+    border-radius: 5%;
+    margin: 6%;
+    padding: 6%;
+
+}
+
+.headers {
+    font-family: monospace;
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline black 0.2cm;
+}
+
+table {
+    background-color: white;
+    color: black;
+}
+
+td {
+    background-color: violet;
+}
+
+.tdr {
+    background-color: green;
+}
+
+.p1 {
+    background-color: green;
+    color: black;
+    border: 0.1cm solid black;
+    padding: 0%;
+    margin: 1% 45% 0% 45%;
+}
+
+.p2 {
+    background-color: violet;
+    color: black;
+    border: 0.1cm solid black;
+    padding: 0%;
+    margin: 1% 45% 0% 45%;
+}
+
+.p1:hover {
+    border: 0.2cm solid black;
+
+}
+
+.p2:hover {
+    border: 0.2cm solid black;
+
+}
+
+hr {
+    background-color: black;
+    color: black;
+}

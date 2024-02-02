@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.borderRadius50 {
+    border-radius: 50%;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.justifycontentCenter {
+    justify-content: center;
+}
+
+.spacebetwen {
+    justify-content: space-between;
+}
+
+.alignitemsCenter {
+    align-items: center;
+}
+
+.NumberofIconNotificationsHeader {
+    background-color: red;
+    padding: 1px;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.BackgroundColorWhite {
+    background-color: white;
+}
+
+.IconBoxShadow {
+    box-shadow: 5px 3px 3px gray;
+}
+
+
+.HeaderIconBorder {
+    border: 5px solid transparent;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.HeaderSearhBar {
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    border-bottom: solid gray;
+    margin-right: 5px;
+}
+
+.NotificationIconHeader {
+    position: relative;
+}
+
+.NumberofIconNotificationsHeader {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.notificationsPopUp {
+    position: absolute;
+    top: 10px;
+    left: -216px;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    visibility: hidden;
+}
+
+.NotificationIconHeader:hover .notificationsPopUp {
+    visibility: visible;
+}

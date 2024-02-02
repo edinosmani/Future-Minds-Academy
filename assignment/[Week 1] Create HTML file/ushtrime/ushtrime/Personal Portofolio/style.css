@@ -1,0 +1,108 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.justifyContentSpaceAround {
+    justify-content: space-around;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.alginitemsCenter {
+    align-items: center;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.flexdirectionColumn {
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    padding: 25px;
+    border-bottom: 2px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.HeaderLogo {
+    width: 50px;
+}
+
+.navbarUl>li {
+    list-style: none;
+}
+
+.navbarUl>li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbarUl>li>a:hover {
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+
+/* MAIN */
+
+main {
+    background-image: url(./images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.MainImgLogo {
+    width: 500px;
+    border-radius: 50%;
+    border: 15px double gray;
+    margin-top: 5%;
+}
+
+.SocialMediaImg {
+    width: 50px;
+}
+
+.aboutmeP {
+    background-color: rgb(69, 69, 241);
+    color: white;
+    padding: 15px;
+    box-shadow: 5px 5px 5px blue;
+    margin: 35px 0px;
+    border: 1px solid black;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.MainP {
+    font-size: 100px;
+    color: darkblue;
+}
+
+.unsername {
+    color: orange;
+}
+
+.underMainP {
+    color: darkblue;
+    font-size: 50px;
+}
+
+.underMainP>span {
+    color: darkred;
+}

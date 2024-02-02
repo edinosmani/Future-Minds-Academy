@@ -1,0 +1,126 @@
+body {
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    background-color: aquamarine;
+}
+
+hr {
+    margin: 2% 25%;
+    border: 0.2cm solid red;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+h2 {
+    text-decoration: underline red;
+}
+
+section {
+    margin: 2% 5%;
+    padding: 1% 5%;
+    background-color: white;
+    border: 0.1cm solid black;
+    border-radius: 25px;
+}
+
+.tablesection {
+    padding: 1% 35%;
+}
+
+p {
+    margin: 1% 5%;
+    padding: 1% 15%;
+    border: 0.1cm solid transparent;
+    border-radius: 5%;
+    background-color: blanchedalmond;
+}
+
+p:hover {
+    border: 0.2cm solid black;
+    font-weight: bold;
+    font-size: large;
+}
+
+img {
+    border: 0.1cm solid black;
+    background-color: aqua;
+}
+
+img:hover {
+    border: 0.2cm solid black;
+    width: 350px;
+}
+
+th {
+    background-color: white;
+}
+
+.positionsth {
+    background-color: green;
+}
+
+.playersth {
+    background-color: bisque;
+}
+
+.Spanish {
+    background-color: rgb(255, 136, 0);
+}
+
+.german {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.portugal {
+    background-color: blueviolet;
+}
+
+.uruguay {
+    background-color: aqua;
+}
+
+.france {
+    background-color: blue;
+}
+
+.denmark {
+    background-color: rgb(166, 79, 79);
+}
+
+.netherlands {
+    background-color: rgb(87, 87, 143);
+}
+
+.poland {
+    background-color: rgb(224, 0, 0);
+}
+
+.brazil {
+    background-color: rgb(2, 81, 2);
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+th,
+td:hover {
+    border: 0.1cm solid black;
+    font-weight: bold;
+    font-size: large;
+}
+
+footer {
+    background-color: gray;
+}

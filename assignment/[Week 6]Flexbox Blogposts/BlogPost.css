@@ -1,0 +1,73 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.flexdirectionColumn {
+    flex-direction: column;
+}
+
+.alignItemsEnd {
+    align-items: end;
+}
+
+/* ASIDE */
+
+aside {
+    background-color: lightslategrey;
+    height: 100vh;
+    width: 20vw;
+    padding-right: 50px;
+    justify-content: center;
+}
+
+h2>span {
+    color: white;
+    font-size: 50px;
+}
+
+
+aside>p {
+    color: lightblue;
+    font-size: 30px;
+    align-items: end;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 3px solid lightskyblue;
+    margin: 15px 0px;
+    padding: 5px 20px;
+}
+
+/* MAIN */
+
+main {
+    margin: 5% 0%;
+    justify-content: center;
+    width: 80vw;
+}
+
+hr {
+    margin: 3% 0% 5% 0%;
+}
+
+.MainPersonImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+
+}
+
+.Container1 {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,48 @@
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+}
+
+/* Classes */
+
+.displayflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul>li {
+    list-style: none;
+    color: white;
+}
+
+li>a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    border: 0.2cm solid black;
+    border-radius: 5px;
+    background-color: red;
+    text-align: center;
+    padding: 5px;
+}
+
+.headerimage {
+    width: 10px;
+}
+
+.navbarheader {
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 3px 3px;
+    gap: 2rem;
+    box-shadow: black;
+
+}

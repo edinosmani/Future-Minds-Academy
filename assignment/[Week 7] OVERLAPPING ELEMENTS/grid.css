@@ -1,0 +1,12 @@
+body {
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr(5);
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+}
+
+header {
+    background-color: aquamarine;
+}

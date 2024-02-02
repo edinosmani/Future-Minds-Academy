@@ -1,0 +1,44 @@
+body {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+hr {
+    margin: 5% 25%;
+    border: 0.1cm solid black;
+}
+
+h1 {
+    font-family: 'Kalnia', serif;
+}
+
+section {
+    margin: 2% 10%;
+    border: 0.1cm solid black;
+    background-color: beige;
+}
+
+article {
+    margin: 2% 15%;
+    border: 0.1cm dashed black;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+}
+
+p {
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5% 25%;
+    padding: 2% 2.5%;
+    border: 0.1cm solid black;
+    font-family: 'Lobster', sans-serif;
+
+}
+
+footer {
+    border: 0.1cm solid red;
+    background-color: black;
+    color: white;
+    margin: 1%;
+}

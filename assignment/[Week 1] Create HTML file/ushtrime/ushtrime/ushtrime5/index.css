@@ -1,0 +1,52 @@
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+hr {
+    margin: 1% 25%;
+    border: 0.1cm solid red;
+}
+
+.thesimaesecatarticle {
+    background-image: url(./images/siamescat.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.2cm solid black;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10% 0%;
+    margin: 4% 15%;
+}
+
+.britishshorthairarticle {
+    background-image: url(./images/britishshorthaircat.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.2cm solid black;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10% 0%;
+    margin: 4% 15%;
+}
+
+.thebirmancatarticle {
+    background-image: url(./images/birmancat.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.2cm solid black;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10% 0%;
+    margin: 4% 15%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    border: 0.1cm solid transparent;
+    padding: 5% 1% 5% 1%;
+}

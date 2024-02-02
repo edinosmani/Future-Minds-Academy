@@ -1,0 +1,75 @@
+.header {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline red;
+}
+
+.headeroflanguages {
+    text-decoration: underline red;
+    color: blue;
+}
+
+.headeroflanguages:hover {
+    color: red;
+    width: 30px;
+    text-align: center;
+    padding: 0% 49%;
+}
+
+body {
+    text-align: center;
+    background-color: rgba(114, 201, 201, 0.77);
+}
+
+table {
+    padding: 0% 45%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+th {
+    color: black;
+    background-color: green;
+}
+
+td {
+    color: red;
+    background-color: greenyellow;
+}
+
+img {
+    border: 0.1cm solid black;
+}
+
+.sectionsoflanguages {
+    padding: 1% 30%;
+    border: 0.1cm solid black;
+    border-radius: 1cm;
+    background-color: rgba(255, 228, 196, 0.775);
+}
+
+.articles {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0.1cm solid black;
+    border-radius: 1cm;
+    background-color: white;
+    color: black;
+}
+
+.articles:hover {
+    border: 0.2cm solid red;
+    border-radius: 1cm;
+    font-weight: bold;
+    mask-border-width: 0.5cm;
+
+}
+
+footer {
+    font-weight: bold;
+    background-color: gray;
+    padding: 1% 2% 2% 0%;
+}
+
+hr {
+    margin: 1% 15%;
+    border: 0.1cm solid black;
+}

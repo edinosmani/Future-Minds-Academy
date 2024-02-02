@@ -1,0 +1,66 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dFLex {
+    display: flex;
+}
+
+.gap2 {
+    gap: 2rem;
+}
+
+/* HEADER */
+
+header {
+    background-color: blue;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    align-items: center;
+}
+
+/* NAVBAR */
+.navbar,
+li {
+    list-style: none;
+}
+
+.navbar,
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li>a {
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.headerimg {
+    width: 100px;
+}
+
+/* MAIN */
+aside {
+    background-color: aqua;
+    width: 15%;
+    padding: 2rem;
+    height: 100vh;
+}
+
+
+section {
+    background-color: red;
+}
+
+.card {
+    width: 35vh;
+    height: 35vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}

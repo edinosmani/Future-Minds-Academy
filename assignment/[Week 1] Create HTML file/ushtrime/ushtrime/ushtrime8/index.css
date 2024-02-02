@@ -1,0 +1,167 @@
+/* GLOBAL */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.gap2 {
+    gap: 1rem;
+}
+
+img {
+    width: 150px;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgba(0, 0, 255, 0.799);
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    border-bottom: 0.1cm solid black;
+}
+
+/* SEARCHBAR */
+
+.searchbar {
+    border: 01.cm black solid;
+    border-radius: 10px;
+    width: 750px;
+    justify-content: center;
+}
+
+/* NAVBAR */
+
+
+ul>li {
+    list-style: none;
+}
+
+
+li>a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    gap: 2rem;
+}
+
+.navbarLi {
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.747);
+    padding: 5px;
+}
+
+/* ASIDE */
+aside {
+    background-color: rgba(0, 0, 255, 0.636);
+    height: 700vh;
+    width: 500vh;
+    border-right: 0.1cm solid black;
+}
+
+.asideul {
+    border: 0.1cm solid gray;
+    padding: 1px 0px;
+    margin: 15px 0px;
+    background-color: gray;
+    box-shadow: 10px 5px 5px black;
+}
+
+.asideul>a:hover {
+    color: blue;
+}
+
+.asidetodo {
+    border-bottom: 0.1cm solid black;
+
+}
+
+/* MAIN */
+.dFlexarticles {
+    padding: 0% 10%;
+    margin: 5%;
+}
+
+.dFlexarticles>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2,
+figure,
+article {
+    justify-content: center;
+}
+
+.articlesimage {
+    width: 250px;
+    justify-content: center;
+}
+
+.mainP {
+    padding: 1% 25%;
+}
+
+.mainP:hover {
+    font-weight: bold;
+}
+
+h2:hover {
+    color: red;
+}
+
+hr {
+    border: 0.1cm solid gray;
+}
+
+.hrSections {
+    border: 0.1cm solid black;
+}
+
+main {
+    background-image: url(./images/background.jpg);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* FOOTER */
+footer {
+    margin: 0;
+    padding: 0% 0%;
+    background-color: black;
+    color: red;
+    border-top: 0.3cm solid white;
+}
+
+.footerimgs {
+    justify-content: space-between;
+    padding: 2% 0% 10% 0%;
+}
+
+.socialmediaImgs {
+    gap: 10px;
+}
+
+.S {
+    width: 70px;
+}
+
+.copyright {
+    justify-content: space-between;
+    padding: 1% 0% 2% 0%;
+    font-weight: bold;
+}
+
+.navbarTextarea {
+    align-items: end;
+    justify-content: center;
+    padding: 0% 0% 25%;
+    margin: 642vh 0vh 0vh 0vh;
+    border-top: 0.1cm solid black;
+}

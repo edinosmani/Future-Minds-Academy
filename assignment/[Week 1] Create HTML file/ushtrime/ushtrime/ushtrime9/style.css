@@ -1,0 +1,178 @@
+/* GLOBAL */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.logos {
+    width: 150px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 50px;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.justifyContentSpacebetween {
+    justify-content: space-between;
+}
+
+.textalignRight {
+    text-align: right;
+}
+
+.textalignLeft {
+    text-align: left;
+}
+
+
+/* HEADER */
+
+header {
+    border-bottom: 0.1cm solid black;
+    padding: 1% 2% 0% 2%;
+    margin: 0%;
+}
+
+.navbarul {
+    gap: 2rem;
+}
+
+.navbar {
+    justify-content: space-evenly;
+}
+
+.navbarli {
+    border: 0.1cm solid black;
+    background-color: gray;
+    padding: 5px;
+}
+
+.navbarli>a {
+    color: white;
+}
+
+/* ASIDE */
+
+aside {
+    height: 150vh;
+    width: 100vh;
+    border-right: 0.1cm solid black;
+    background-color: bisque;
+}
+
+h1 {
+    width: 500px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 50% 15% 2% 5%;
+}
+
+.asideForm {
+    margin: 0% 5% 0% 5%;
+}
+
+#text {
+    width: 500px;
+    height: 70px;
+    padding-left: 5%;
+    border: 0.1cm solid black;
+}
+
+.asideFormText {
+    margin: 1% 5%;
+    color: gray;
+}
+
+.getstartedButton {
+    width: 150px;
+    background-color: brown;
+    color: white;
+    border: 0.1cm solid black;
+}
+
+.upperFormText {
+    margin: 0% 15% 2% 5%;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
+/* MAIN */
+
+main {
+    background-image: url(./images/photo.1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+    width: 150vh;
+    height: 150vh;
+    align-items: start;
+
+}
+
+h2 {
+    text-align: left;
+}
+
+
+.mainP1 {
+    text-align: left;
+}
+
+
+
+.mainSection {
+    border: 0.1cm solid white;
+    padding: 5%;
+    margin: 10% 25%;
+    flex-direction: column;
+}
+
+#range {
+    width: 450px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    border-top: 1cm solid black;
+    color: black;
+}
+
+.scoialmediaIcons {
+    gap: 2rem;
+    padding-right: 2%;
+}
+
+.footerlogo {
+    width: 150px;
+}
+
+.footerHr {
+    border: 0.1cm solid black;
+    margin: 1% 10% 0% 10%;
+}
+
+.footerCopyright {
+    padding: 5%;
+    font-weight: bold;
+}

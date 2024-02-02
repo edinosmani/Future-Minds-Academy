@@ -1,0 +1,217 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.358);
+    margin: 15px 35px;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.justifycontentCenter {
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+.spacebetwen {
+    justify-content: space-between;
+}
+
+.alignitemsCenter {
+    align-items: center;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.gap1rem {
+    gap: 5px;
+}
+
+.borderRadius50 {
+    border-radius: 50%;
+}
+
+.BackgroundColorWhite {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.IconBoxShadow {
+    box-shadow: 5px 3px 3px gray;
+}
+
+.PositoinTopMiddle {
+    position: absolute;
+    top: -25px;
+}
+
+/* HEADER */
+
+header {
+    margin: 15px 45px;
+}
+
+.HeaderIconBorder {
+    border: 5px solid transparent;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.NotificationIconHeader {
+    position: relative;
+}
+
+.NumberofIconNotificationsHeader {
+    background-color: red;
+    padding: 0px;
+    position: absolute;
+    top: 1;
+    right: 1;
+}
+
+.HeaderSearhBar {
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    border-bottom: solid gray;
+    margin-right: 5px;
+}
+
+.HeaderSearhBar:hover {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid blueviolet;
+}
+
+.CardPositionFixed {
+    position: relative;
+}
+
+/* MAIN */
+
+.FlagsImg {
+    width: 35px;
+}
+
+.HrOfGlobalSalesOfTopLocations {
+    margin: 25px 0px;
+}
+
+.card1 {
+    margin: 70px;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.card1>h2 {
+    margin-bottom: 50px;
+}
+
+.GlobalSalesbyTopLocationsIcon {
+    background-color: green;
+}
+
+.HeadersIconsCommands {
+    border-radius: 5%;
+    color: white;
+    padding: 25px;
+}
+
+.CardPositionRelative {
+    position: relative;
+}
+
+.PositoinTopLeft {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+.UnitedClassForAllFourContainers {
+    border-radius: 15px;
+    padding: 10%;
+    margin: 5% 0%;
+}
+
+.ContainerofFourArticlesOfPage {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 200px;
+    gap: 20px;
+}
+
+.sectionOfBookingsAndWebVisit {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.sectionOfRevenueAndFollowes {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+
+.GlobalSalesbyTopLocationsIcon {
+    background-color: green;
+}
+
+.BookingsIcon {
+    background-color: yellow;
+}
+
+.RevenueIcon {
+    background-color: green;
+}
+
+.WebsiteVisitIcon {
+    background-color: palevioletred;
+}
+
+.FollowersIcon {
+    background-color: blue;
+}
+
+.fontcolorGray {
+    color: gray;
+}
+
+.cardsborders {
+    border: 5px solid transparent;
+    border-radius: 5px;
+    padding: 100px;
+    margin: 5%;
+}
+
+.card2>h5 {
+    margin: 5px 0px 20px 0px;
+}
+
+.ManageListingsSectionImg {
+    width: 500px;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 50px 0px;
+}
+
+footer>ul {
+    font-weight: bold;
+}
