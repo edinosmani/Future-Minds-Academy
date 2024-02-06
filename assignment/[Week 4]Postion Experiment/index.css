@@ -1,24 +1,54 @@
 section {
-    margin: 1% 0%;
-    padding: 5% 25% 5% 0%;
+    /* padding: 5% 25% 5% 0%; */
     display: inline-block;
     position: left;
     background-color: white;
 }
 
 article {
-    border: 0.1cm solid transparent;
-    box-shadow: 5px 5px 5px 10px gray;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.664);
+    padding: 10px;
+}
+
+.PositionAbsolute {
+    position: absolute;
 }
 
 h2 {
-    width: 5px;
+    position: relative;
+    top: 70px;
+    left: 15px;
+    font-size: 50px;
     font-weight: bold;
-    display: flex;
-    position: absolute;
-    top: -10;
 }
 
-.postionrelative {
+.material-symbols-outlined {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
     position: relative;
+    top: -70px;
+    left: 560px;
+}
+
+video {
+    width: 350px;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+.videoarticle {
+    border: 1px solid black;
+    border-radius: 15%;
+    position: fixed;
+    bottom: 1px;
+    left: 1150px;
+}
+
+.udervideotext {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
