@@ -3,6 +3,7 @@
     padding: 0;
 }
 
-.article {
+section h1,
+section p {
     display: inline;
 }
