@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.LogInSection {
+    background-color: rgba(128, 128, 128, 0.411);
+    padding: 50px;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+input {
+    padding: 5px 200px 5px 2px;
+}
+
+input:focus {
+    outline: solid blue;
+}
+
+.textBelow {
+    visibility: hidden;
+    color: rgb(85, 85, 85);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s, ease transform 2s;
+}
+
+input:focus+.textBelow {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-15px);
+}
+
+.ButtonAndImageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 3px 5px;
+}
+
+.svgimage {
+    width: 50px;
+    animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
