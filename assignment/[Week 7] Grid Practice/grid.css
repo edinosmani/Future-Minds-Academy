@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 3em;
+}
+
+.pink {
+    background-color: pink;
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.green {
+    background-color: greenyellow;
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+}
+
+.green1 {
+    background-color: greenyellow;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.green2 {
+    background-color: greenyellow;
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+
+.green3 {
+    background-color: greenyellow;
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+.pink1 {
+    background-color: pink;
+    grid-column: 1/5;
+    grid-row: 4/5;
+}
