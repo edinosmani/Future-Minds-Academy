@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagelogo {
+    height: 300px;
+    filter: blur(10px);
+    transition: .4s .3s filter, .9s .5s transform ease-in-out;
+
+}
+
+
+.imagelogo:hover {
+    filter: none;
+    transform: rotate(720deg);
+}
