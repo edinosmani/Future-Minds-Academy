@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of three numbers</title>
+</head>
+
+<body>
+    <script>
+        let numberOne = parseInt(prompt('Write the first number'));
+
+        let numberTwo = parseInt(prompt('Write the second number'));
+
+        let numberThree = parseInt(prompt('Write the third number'));
+
+        if (numberOne > numberTwo && numberOne > numberThree) {
+            alert(`First Number (${numberOne}) is larger than Second Number (${numberTwo}) and Third Number (${numberThree})`)
+        }
+
+        else if (numberTwo > numberOne && numberTwo > numberThree) {
+            alert(`Second Number (${numberTwo}) is larger than First Number (${numberOne}) and Third Number (${numberThree})`)
+        }
+
+        else if (numberThree > numberOne && numberThree > numberTwo) {
+            alert(`Third Number (${numberThree}) is larger than First Number (${numberOne}) and Second Number (${numberTwo})`)
+        }
+    </script>
+</body>
+
+</html>
