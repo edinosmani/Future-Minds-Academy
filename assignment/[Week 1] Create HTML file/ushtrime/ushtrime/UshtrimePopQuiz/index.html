@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 4rem;
+        }
+
+        header>nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        header>nav>ul {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        figure {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Logo
+        </h1>
+
+
+        <nav>
+            <ul id="NavUl">
+                <li>
+                    <a href="#" id="Spring">Spring</a>
+                </li>
+
+                <li>
+                    <a href="#" id="Summer">Summer</a>
+                </li>
+
+                <li>
+                    <a href="#" id="Fall">Fall</a>
+                </li>
+
+                <li>
+                    <a href="#" id="Winter">Winter</a>
+                </li>
+            </ul>
+
+            <button id="AllSeasonsButton">
+                All Seasons
+            </button>
+        </nav>
+    </header>
+
+
+    <main class="HtmlMain">
+        <h1 id="ResultH1"></h1>
+        <figure>
+            <img src="" alt="" id="ResultImg">
+        </figure>
+    </main>
+
+    <script>
+        let Spring = document.querySelector('#Spring');
+        let Summer = document.querySelector('#Summer');
+        let Fall = document.querySelector('#Fall');
+        let Winter = document.querySelector('#Winter');
+        let AllSeasonsButton = document.querySelector('#AllSeasonsButton');
+
+
+        const seasons = {
+            Spring: {
+                h1: "Spring",
+                imgsrc: "images/spring.jpeg"
+
+            },
+            Summer: {
+                h1: "Summer",
+                imgsrc: "images/summer.jpeg"
+            },
+            Fall: {
+                h1: "Fall",
+                imgsrc: "images/fall.jpeg"
+            },
+            Winter: {
+                h1: "Winter",
+                imgsrc: "images/winter.jpeg"
+            }
+        }
+
+        function updateContent(season) {
+            const resultH1 = document.getElementById('ResultH1');
+            const resultImg = document.getElementById('ResultImg');
+
+            resultH1.textContent = seasons[season].h1;
+            resultImg.src = seasons[season].imgsrc;
+            resultImg.alt = season;
+        }
+
+
+
+        Spring.addEventListener("click", function () {
+            updateContent('Spring');
+        });
+
+        Summer.addEventListener("click", function () {
+            updateContent('Summer');
+        });
+
+        Fall.addEventListener("click", function () {
+            updateContent('Fall');
+        });
+
+        Winter.addEventListener("click", function () {
+            updateContent('Winter');
+        });
+
+
+        AllSeasonsButton.addEventListener("click", function () {
+            const HtmlMain = document.querySelector('.HtmlMain');
+
+            HtmlMain.innerHTML = `
+        <h1>${seasons.Spring.h1}</h1>
+        <img src="${seasons.Spring.imgsrc}" alt="${seasons.Spring.h1}">
+        
+        <br>
+
+        <h1>${seasons.Summer.h1}</h1>
+        <img src="${seasons.Summer.imgsrc}" alt="${seasons.Summer.h1}">
+
+        <br>
+        
+        <h1>${seasons.Fall.h1}</h1>
+        <img src="${seasons.Fall.imgsrc}" alt="${seasons.Fall.h1}">
+
+        <br>
+
+        <h1>${seasons.Winter.h1}</h1>
+        <img src="${seasons.Winter.imgsrc}" alt="${seasons.Winter.h1}">
+    `;
+        });
+
+    </script>
+</body>
+
+</html>

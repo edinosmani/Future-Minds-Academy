@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .bgr>h3 {
+            position: absolute;
+            top: 40px;
+            left: 740px;
+        }
+
+        select {
+            padding: 10px 180px;
+        }
+
+        .bgr {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgr" id="ac">
+        <h3 id="temp">
+            0
+        </h3>
+
+        <img src="./images/air-conditioner.png" alt="">
+    </div>
+
+    <select name="" id="tempselect">
+    </select>
+
+    <script>
+        const tempselect = document.querySelector("#tempselect");
+        const temp = document.querySelector("#temp")
+
+        let alloptions = ""
+
+        for (let i = 0; i <= 30; i++) {
+            if (i == 0) {
+                alloptions += `<option value="OFF">OFF</option>`;
+            }
+
+            else {
+                alloptions += `<option value="${i}">${i}</option>`;
+            }
+        }
+
+        tempselect.innerHTML = alloptions;
+
+        tempselect.addEventListener("change", function (e) {
+            temp.textContent = e.target.value;
+        })
+    </script>
+</body>
+
+</html>
