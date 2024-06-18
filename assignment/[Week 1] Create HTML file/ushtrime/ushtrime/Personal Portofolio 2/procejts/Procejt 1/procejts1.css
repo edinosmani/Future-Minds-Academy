@@ -1,0 +1,379 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.545);
+    overflow: hidden;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.JustifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.AlignItemsCenter {
+    align-items: center;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.BorderRadius50 {
+    border-radius: 50%;
+}
+
+.padding25px {
+    padding: 25px;
+}
+
+.padding15px {
+    padding: 15px;
+}
+
+.PaddingofCards {
+    padding: 10px 50px;
+}
+
+.BorderShadow {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.489);
+}
+
+.BackgroundColorWhite {
+    background-color: white;
+}
+
+.BorderRadiusOfCards {
+    border-radius: 10px;
+}
+
+.TextAligncenter {
+    text-align: center;
+}
+
+.FontColorGray {
+    color: gray;
+}
+
+.PostionAbsolute {
+    position: absolute;
+}
+
+.PostionRelative {
+    position: relative;
+}
+
+.VisibilityHidden {
+    visibility: hidden;
+}
+
+.marginbottom10px {
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.marginBottom40px {
+    margin-bottom: 50px;
+}
+
+section {
+    margin: 60px 0px;
+}
+
+/* ASIDE */
+
+aside {
+    background-image: url(./images/sidebar-1.jpg);
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 25px;
+    color: white;
+    overflow-y: scroll;
+}
+
+aside>nav>ul {
+    margin: 40px 0px;
+}
+
+aside>nav>ul>li>a {
+    padding: 20px;
+    margin: 0px 10px;
+    color: white;
+}
+
+.AsideBarAvatar {
+    width: 60px;
+}
+
+.AsideBarDashboard {
+    background-color: rgba(226, 44, 99, 0.889);
+    padding: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.AsideBarli {
+    margin: 10px 0px;
+}
+
+.AsideBarli:hover {
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+}
+
+/* MainDiv */
+.MainDiv {
+    padding: 35px 60px;
+    overflow-y: scroll;
+}
+
+/* HEADER */
+
+header {
+    margin-bottom: 100px;
+}
+
+.SmallScreenHeader {
+    display: none;
+}
+
+.HeadersIconsCommands {
+    border-radius: 5%;
+    color: white;
+    padding: 25px;
+}
+
+.HeaderIconHover:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.489);
+}
+
+#HeaderSearch {
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 3px solid gray;
+}
+
+#HeaderSearch:focus {
+    border-bottom: 3px solid darkviolet;
+}
+
+.NumberofIconNotificationsHeader {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    padding: 1px;
+    top: -13px;
+    right: -2px;
+}
+
+.HeaderNottoficationPopUp {
+    background-color: white;
+    width: 250px;
+    top: -5px;
+    left: -250px;
+    display: none;
+}
+
+.HeaderNottoficationPopUp>p {
+    margin: 3px;
+}
+
+.HeaderNottoficationPopUp>p:hover {
+    background-color: orangered;
+}
+
+.VisibilityVisibile:hover .HeaderNottoficationPopUp {
+    display: block;
+}
+
+/* MAIN */
+
+.FirstMainCard {
+    grid-template-columns: 1fr 1fr;
+}
+
+.GlobalSalesbyTopLocationsIcon {
+    background-color: green;
+    margin: 10px;
+    top: -45px;
+    left: -40px;
+}
+
+.GlobalSalesbyTopLocationsTitle {
+    top: 10px;
+    left: 80px;
+}
+
+.FlagsImg {
+    width: 30px;
+}
+
+.HrThatDividesCountrys {
+    margin: 25px 0px;
+}
+
+.Map {
+    width: 100%;
+    height: 400px;
+    margin: 20px;
+}
+
+.HeadersIconsCommands {
+    border-radius: 5%;
+    color: white;
+    padding: 35px;
+}
+
+.BookingsIcon {
+    background-color: rgb(250, 182, 24);
+}
+
+.WebsiteVisitIcon {
+    background-color: palevioletred;
+}
+
+.RevenueIcon {
+    background-color: green;
+}
+
+.FollowersIcon {
+    background-color: rgb(0, 115, 255);
+}
+
+.PositoinForIcons {
+    transform: translateY(-40px);
+}
+
+.ContainerofFourArticlesOfPage {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.LastMainCardsContainers {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.LastMainCardsImages {
+    width: 100%;
+    border-radius: 15px;
+    transform: translateY(-45px);
+}
+
+.LastMainCardsIcons {
+    transform: translateY(-58px);
+}
+
+.LastMainCardsImageHover:hover .LastMainCardsImages {
+    transform: translateY(-75px);
+    transition: 0.4s ease-in-out;
+}
+
+.LastMainCardsImageHover:hover .LastMainCardsIcons {
+    visibility: visible;
+}
+
+.LastMainCardsIconColorRed {
+    color: red;
+}
+
+.LastMainCardsIconColorGreen {
+    color: green;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 45px 0px;
+}
+
+footer>nav>ul>li {
+    font-weight: bold;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:1400px) {
+    .LastMainCardsContainers {
+        margin: 100px 0px;
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .BigScreenHeader {
+        display: none;
+
+    }
+
+    .SmallScreenHeader {
+        display: flex;
+    }
+
+    .FirstMainCard {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:500px) {
+    .LastMainCardsContainers {
+        margin: 100px 0px;
+        grid-template-columns: 1fr;
+    }
+
+    .FirstMainCard {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .BigScreenHeader {
+        display: none;
+
+    }
+
+    .SmallScreenHeader {
+        display: flex;
+    }
+
+    .ContainerofFourArticlesOfPage {
+        grid-template-columns: 1fr;
+    }
+
+    .SectionOfFirstCard article {
+        display: block;
+    }
+}

@@ -1,0 +1,408 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    grid-template-columns: auto 1fr;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.alignitemscenter {
+    align-items: center;
+}
+
+.justifycontentcenter {
+    justify-content: center;
+}
+
+.positionabsolute {
+    position: relative;
+}
+
+
+.bluefont {
+    color: darkblue;
+}
+
+.whitefont {
+    color: white;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
+
+.spaceevenly {
+    justify-content: space-evenly;
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+/* ASIDE */
+
+aside {
+    background-image: url(./images/istockphoto-858358986-612x612.jpg);
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.619);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    overflow-y: scroll;
+    padding: 15px 70px;
+    flex-direction: column;
+}
+
+aside>nav>ul>li {
+    list-style: none;
+    margin: 27px 10px;
+}
+
+aside>nav>ul>li>a {
+    font-weight: bold;
+}
+
+#asidelogo {
+    width: 250px;
+    border-radius: 10%;
+    margin: 25px 0px;
+}
+
+aside>nav>ul>li>a {
+    text-decoration: none;
+    color: darkblue;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 20px;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+aside>nav>ul>li>a:hover {
+    background-color: darkblue;
+    color: white;
+    border: 1px solid white;
+}
+
+/* HEADER */
+
+header {
+    background-color: darkblue;
+    padding: 10px 15px;
+}
+
+header>div>nav>ul>li {
+    list-style: none;
+    padding: 0px 25px;
+}
+
+header>div>nav>ul>li>a:hover {
+    text-decoration: underline white;
+    color: aqua;
+}
+
+header>div>nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+header>div>h2>figure>img {
+    width: 100px;
+}
+
+.SmallScreenHeader {
+    display: none;
+}
+
+#language {
+    width: 50px;
+    border-radius: 50%;
+    height: 40px;
+    border: 2px solid white;
+}
+
+.popup {
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    background-color: blue;
+    padding: 10px;
+    display: none;
+}
+
+.popup>div>ul>li {
+    list-style: none;
+}
+
+.popup>div>ul>li>a {
+    color: aqua;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 1px 15px;
+}
+
+.popuphover:hover .popup {
+    display: block;
+}
+
+div>section>ul>li {
+    list-style: none;
+}
+
+.popup2 {
+    position: absolute;
+    top: 80px;
+    left: 900px;
+    background-color: blue;
+    padding: 10px;
+    display: none;
+}
+
+.popup2>section>ul>li {
+    color: bisque;
+    font-weight: bold;
+    display: block;
+}
+
+.popuphover2:hover .popup2 {
+    display: block;
+}
+
+.popup3 {
+    position: absolute;
+    top: 80px;
+    left: 1600px;
+    background-color: blue;
+    padding: 10px;
+    display: none;
+}
+
+.popuphover3:hover .popup3 {
+    display: block;
+}
+
+.popup3section>ul>li {
+    list-style: none;
+    margin: 20px;
+    padding: 15px;
+}
+
+.popup3section>ul>li:hover {
+    text-decoration: underline white;
+}
+
+.popup3section>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.languagesflag {
+    width: 15px;
+}
+
+.SmallScreenHeaderMenu {
+    color: white;
+}
+
+/* MAIN */
+
+.mainbodydiv {
+    overflow-y: scroll;
+}
+
+.SmallScreenMainheadersearch {
+    display: none;
+}
+
+main>h2 {
+    background-image: url(./images/istockphoto-858358986-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    border-bottom: 3px solid black;
+
+}
+
+.mainheadersearch {
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+    margin: 50px 35px;
+    padding: 25px;
+}
+
+.mainheadersearchbutton {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    background-color: darkblue;
+}
+
+.mainheadersearchbutton:hover {
+    color: darkblue;
+    border: 1px solid darkblue;
+    background-color: white;
+}
+
+.padding15px {
+    padding: 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.domine-uniquifier {
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #0800ff,
+        1px -1px 0 #0800ff,
+        -1px 1px 0 #0800ff,
+        1px 1px 0 #0800ff;
+}
+
+.protest-strike-regular {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: darkblue;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+}
+
+.mapssections {
+    background-color: darkblue;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.borderofcontinents {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    background-color: white;
+}
+
+.mapsofcontinents {
+    width: 380px;
+}
+
+.FourCitiesContainer {
+    grid-template-columns: 1fr 1fr;
+}
+
+.citiesimgs {
+    width: 300px;
+    height: 300px;
+}
+
+.citiesborders {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    background-color: darkblue;
+}
+
+.citiesborders:hover {
+    border: 4px;
+    background-color: gray;
+}
+
+/* FOOTER */
+
+footer>h2 {
+    background-color: darkblue;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+footer>ul {
+    padding: 25px;
+}
+
+footer>ul>li {
+    list-style: none;
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+}
+
+/* MEDIA */
+
+@media (max-width:1400px) {
+    aside {
+        display: none;
+    }
+
+    .BigScreenHeader {
+        display: none;
+    }
+
+    .SmallScreenHeader {
+        display: flex;
+    }
+}
+
+@media (max-width:600px) {
+    aside {
+        display: none;
+    }
+
+    .BigScreenHeader {
+        display: none;
+    }
+
+    .SmallScreenHeader {
+        display: flex;
+    }
+
+    .SmallScreenMainheadersearch {
+        display: block;
+    }
+
+    .mainheadersearch {
+        display: none;
+    }
+
+    .mapssections {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .FourCitiesContainer {
+        grid-template-columns: 1fr;
+    }
+}

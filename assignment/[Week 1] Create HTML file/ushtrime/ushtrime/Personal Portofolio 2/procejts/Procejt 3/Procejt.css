@@ -1,0 +1,295 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: pink;
+    grid-template-columns: auto 1fr;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.justifycontentspacebetween {
+    justify-content: space-between;
+}
+
+.alignitemscenter {
+    align-items: center;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.positionrelative {
+    position: relative;
+}
+
+.positionabsolute {
+    position: absolute;
+}
+
+.fontweightBold {
+    font-weight: bold;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* Main */
+.HomeBody {
+
+    text-align: center;
+    padding: 80px;
+    color: pink;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    font-size: 50px;
+}
+
+button {
+    background-color: transparent;
+    outline: transparent;
+    border: 2px solid black;
+    color: white;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    padding: 10px;
+    background-color: pink;
+}
+
+.HomeLogo {
+    width: 450px;
+}
+
+/* MAINDIV */
+.maindiv {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+/* ASIDE */
+aside {
+    background-image: url(./images/360_F_562177976_dH3SgNcJBPjkvonJIyBvemkNCvPfOEKB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.474);
+    padding: 15px 25px;
+    overflow-y: scroll;
+}
+
+aside>h1 {
+    text-align: center;
+    color: pink;
+    margin: 30px 0px;
+}
+
+.asidebarli {
+    border: 1px solid white;
+    padding: 5px 25px;
+    margin: 40px 50px;
+}
+
+.asidebarli:hover {
+    background-color: white;
+}
+
+.asidebarli>a {
+    color: white;
+}
+
+.asidebarli>a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.asidebuttonexit {
+    background-color: transparent;
+    border: none;
+    padding: 5px 25px;
+}
+
+.asidebuttonexit:hover {
+    background-color: white;
+    color: black;
+}
+
+.asidebarlogo {
+    width: 150px;
+}
+
+.selectedli {
+    background-color: rgb(0, 255, 247);
+    border: 1px solid white;
+    padding: 5px 25px;
+    margin: 40px 50px;
+}
+
+.selectedli>a {
+    color: black;
+}
+
+/* HEADER */
+header {
+    background-color: rgb(255, 0, 89);
+    padding: 70px 600px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+/*  */
+section {
+    grid-template-columns: 1fr 1fr;
+}
+
+article {
+    margin: 10px;
+}
+
+article>ul>li {
+    margin: 30px 20px;
+}
+
+.BorderOfArticle {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.BackgroundOfArticle {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.462);
+}
+
+.articleoOfFood {
+    background-image: url(./images/ham.avif);
+    height: 50vh;
+    color: white;
+}
+
+.articleOfDrinks {
+    background-image: url(./images/cola.jpg);
+    color: white;
+}
+
+.articlesOfCoffe {
+    background-image: url(./images/coffe.jpeg);
+    color: white;
+}
+
+.articleOfCakes {
+    background-image: url(./images/cake.jpg);
+    color: white;
+}
+
+.articleOfDelivery {
+    background-image: url(./images/online.jpg);
+    color: white;
+}
+
+.articleOfCheck {
+    background-image: url(./images/fatura.jpeg);
+    color: white;
+}
+
+.articleOfFeedBack {
+    background-image: url(./images/360_F_562177976_dH3SgNcJBPjkvonJIyBvemkNCvPfOEKB.jpg);
+    color: white;
+}
+
+.articleOfWrokersFeedback {
+    background-color: rgba(128, 128, 128, 0.595);
+    color: white;
+}
+
+.articleOfCheckInput {
+    outline: none;
+    padding: 15px;
+    text-align: center;
+    margin: 50px 250px;
+}
+
+.articleOfCheckButton {
+    background-color: white;
+    margin: 50px 300px;
+}
+
+.articleOfFeedBacktextarea {
+    margin: 20px 150px;
+    outline: none;
+}
+
+.workersprofile {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.workersfeedbackmorebuttonpopup {
+    top: 1;
+    left: -400px;
+    display: none;
+}
+
+.workersfeedbackmorebutton:hover .workersfeedbackmorebuttonpopup {
+    display: block;
+}
+
+.workersdiv {
+    margin: 29px 10px;
+}
+
+/* MEDIA RESPONSIVE */
+
+@media(max-width:1400px) {
+    aside {
+        display: none;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:500px) {
+    aside {
+        display: none;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+
+    }
+}
