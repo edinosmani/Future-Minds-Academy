@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+</head>
+
+<body>
+    <h1> Quiz One</h1>
+
+    <ol id="QuestionList">
+
+    </ol>
+
+    <script src="./question.js"></script>
+
+    <script>
+        const QuestionList = document.querySelector('#QuestionList');
+        let questionsHTML = '';
+
+        for (let i = 0; i < allQuestions.length; i++) {
+            questionsHTML += `
+        <li>
+              ${allQuestions[i].question}   
+        
+           <ol type='a'>
+               <li><a href="#"> ${allQuestions[i].opistions[0]}</a></li>
+               <li><a href="#"> ${allQuestions[i].opistions[1]}</a></li>
+                <li><a href="#"> ${allQuestions[i].opistions[2]}</a></li>
+                <li><a href="#"> ${allQuestions[i].opistions[3]}</a></li>
+            </ol>
+        </li>
+    `;
+        }
+
+        QuestionList.innerHTML += questionsHTML;
+    </script>
+</body>
+
+</html>
