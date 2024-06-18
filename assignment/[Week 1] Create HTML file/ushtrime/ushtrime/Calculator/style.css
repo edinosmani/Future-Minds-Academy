@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 50%;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.gap5rem {
+    gap: 5rem;
+}
+
+.borderRadius50 {
+    border-radius: 50%;
+}
+
+.colorBlack {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+/*  */
+.section1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+#headerNumberText {}
+
+.headerIcons {
+    padding: 30px 50px;
+    background-color: gray;
+    font-weight: bold;
+}
+
+.asideIcons {
+    padding: 30px 50px;
+    background-color: orangered;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.CalculatorNumbers {
+    padding: 30px 50px;
+    margin: 10px;
+    background-color: rgb(69, 67, 67);
+}
+
+.ZeroButton {
+    padding: 30px 120px;
+    border-radius: 50px;
+}

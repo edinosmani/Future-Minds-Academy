@@ -1,0 +1,89 @@
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.JustifySpaceBetween {
+    justify-content: space-between;
+}
+
+
+.AlignItemsCenter {
+    align-items: center;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.BorderRadius50 {
+    border-radius: 50%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.padding25px {
+    padding: 25px;
+}
+
+
+/* ASIDE */
+aside {
+    background-image: url(./images/sidebar-1.jpg);
+    height: 150vh;
+    width: 50vh;
+    padding: 15px 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+aside>nav>ul {
+    margin: 40px 0px;
+}
+
+aside>nav>ul>li>a {
+    padding: 20px;
+    margin: 0px 10px;
+}
+
+.asidebarli {
+    margin: 10px 0px;
+}
+
+.asidebarli:hover {
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+}
+
+.AsideBarAvatar {
+    width: 60px;
+}
+
+.AsideBarDashboard {
+    background-color: rgba(226, 44, 99, 0.888);
+    padding: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+}

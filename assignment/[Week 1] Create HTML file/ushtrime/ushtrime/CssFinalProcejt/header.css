@@ -66,15 +66,20 @@ a {
 
 .HeaderSearhBar {
     background-color: transparent;
-    border: transparent;
+    outline: none;
+    border: none;
     color: black;
     border-bottom: solid gray;
-    margin-right: 5px;
+}
+
+.HeaderSearhBar:focus {
+    border-bottom: purple;
 }
 
 .NotificationIconHeader {
     position: relative;
 }
+
 
 .NumberofIconNotificationsHeader {
     width: 15px;
@@ -90,13 +95,35 @@ a {
 .notificationsPopUp {
     position: absolute;
     top: 10px;
-    left: -216px;
+    left: -240px;
     width: 200px;
     background-color: white;
-    padding: 10px;
     visibility: hidden;
+    width: 1000%;
+}
+
+.notificationsPopUp>p {
+    padding: 15px;
+}
+
+.notificationsPopUp>p:hover {
+    background-color: orangered;
 }
 
 .NotificationIconHeader:hover .notificationsPopUp {
     visibility: visible;
+}
+
+.HeaderIconHover:hover {
+    box-shadow: 6px 4px 4px rgb(92, 92, 92);
+}
+
+/* TEST */
+
+.postionabsolute {
+    position: absolute;
+}
+
+.postionrelative {
+    position: relative;
 }
