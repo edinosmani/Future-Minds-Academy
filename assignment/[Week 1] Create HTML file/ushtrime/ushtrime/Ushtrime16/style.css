@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.justifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.backgroundColorWhite {
+    background-color: white;
+}
+
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.gap3rem {
+    gap: 3rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.textColorWhite {
+    color: white;
+}
+
+/* HEADER */
+header {
+    padding: 10px 20px;
+    background-color: #E6E6FA;
+    border-bottom: 2px solid black;
+}
+
+.HeaderLogo {
+    width: 200px;
+}
+
+.HeaderSearchBar {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.ItemsChooseHeaderSearchButton {
+    border-right: 2px solid black;
+    background-color: #191970;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+
+.SearchIconHeader {
+    background-color: rgb(24, 74, 0);
+    padding: 20px;
+}
+
+#HeaderSearchInput {
+    outline: none;
+    border: none;
+    margin-right: 400px;
+    background-color: transparent;
+}
+
+.LanguageFlagImage {
+    width: 10px;
+    width: 30px;
+}
+
+header>nav {
+    gap: 3rem;
+}
+
+/* MAIN */
+.UnderHeaderSection {
+    border-bottom: 2px solid black;
+    background-color: #000080;
+    padding: 20px 15px;
+}
+
+main {
+    background: rgb(0, 205, 238);
+    background: radial-gradient(circle, rgba(0, 205, 238, 0.8436624649859944) 0%, rgba(6, 0, 42, 1) 100%);
+}
+
+.NewsPaperSection {
+    position: relative;
+    overflow: hidden;
+}
+
+.NewsPaperArticle {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.NewsPaperImg {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px 0px;
+    border: 5px solid black;
+}
+
+.slideInLeft {
+    animation: slideInLeft 1s forwards;
+}
+
+.slideInRight {
+    animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(30%);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(30%);
+    }
+}
+
+
+.Firtsvideo {
+    border-radius: 50px;
+    border: double 10px gray;
+    position: relative;
+    right: 0;
+    margin: 15px 0px;
+}
+
+
+@keyframes example {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: -250px;
+    }
+}
+
+.animateVideo {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.AdvertisingSection {
+    padding: 50px;
+}
+
+.AdvertisingSection>article {
+    gap: 15rem;
+    margin-bottom: 15rem;
+}
+
+
+.AdvertisingImages {
+    width: 2000px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.ArticlesContainersDiv {
+    margin-top: 350px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0px 20px;
+
+}
+
+.AdvertisingText {
+    font-size: 35px;
+}
+
+fade-inText .fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 2s ease-in-out;
+    transform: translateY(190px);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-Img {
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(200px);
+}
+
+.fade-in-Img.visible {
+    opacity: 0.6;
+    filter: none;
+    transition: 1s .3s filter, transform 1s ease-in-out;
+    transform: translateY(0);
+}
+
+
+
+.articleImage {
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transform: translateY(0px);
+}
+
+.ArticlesContainers {
+    padding: 30px 20px;
+    border-radius: 25px;
+}
+
+.ArticleImageH2BottomAppear {
+    visibility: hidden;
+    font-size: 30px;
+}
+
+.ArticleImageIconHoverAppear {
+    transform: translateY(-150px);
+    visibility: hidden;
+}
+
+.ArticleImageTextHoverAppear {
+    font-size: 20px;
+    transform: translateY(-200px);
+    visibility: hidden;
+}
+
+.ArticlesContainers {
+    background: rgb(0, 205, 238);
+    background: linear-gradient(183deg, rgba(0, 205, 238, 0.8436624649859944) 0%, rgba(5, 0, 35, 1) 100%);
+}
+
+.ArticlesContainers:hover .articleImage {
+    transform: translateY(-175px);
+    transition: 0.4s ease-in-out;
+}
+
+.ArticlesContainers:hover .ArticleImageTextHoverAppear {
+    visibility: visible;
+    transition-delay: 0.3s;
+    transition-behavior: ease-in-out;
+}
+
+.ArticlesContainers:hover .ArticleImageH2BottomAppear {
+    visibility: visible;
+    transition-delay: 0.3s;
+    transition-behavior: ease-in-out;
+}
+
+.ArticlesContainers:hover .ArticleImageIconHoverAppear {
+    visibility: visible;
+    transition-delay: 0.3s;
+    transition-behavior: ease-in-out;
+}
+
+.FourImagesArticleContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.ArticlesContainers:hover .FourImagesArticleContainer {
+    transform: translateY(-175px);
+    transition: 0.4s ease-in-out;
+}
+
+.articleFourImage {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transform: translateY(0px);
+}
+
+.FavoriteIconColor {
+    color: red;
+}
+
+.SaveIconColor {
+    color: goldenrod;
+}
+
+.EnterIconColor {
+    color: green;
+}
+
+
+
+.product-slider {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ProductsSection {
+    margin-top: 100px;
+}
+
+.product-slider {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.products {
+    transition: transform 0.5s ease;
+}
+
+.product {
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgb(0, 205, 238);
+    background: linear-gradient(183deg, rgba(0, 205, 238, 0.8436624649859944) 0%, rgba(5, 0, 35, 1) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+
+.ProductsDescrptionText {
+    margin-right: 1000px;
+}
+
+.ProductsImgs {
+    width: 250px;
+}
+
+.YellowColor {
+    color: gold;
+}
+
+.moving-bar {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15rem;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+    background: linear-gradient(189deg, rgba(5, 0, 35, 1) 0%, rgba(0, 205, 238, 1) 83%);
+}
+
+.items {
+    animation: moveItems 20s linear infinite;
+}
+
+.item {
+    flex: 0 0 10%;
+    text-align: center;
+    padding: 10px;
+}
+
+.item img {
+    max-width: 250px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.description {
+    margin-top: 5px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+@keyframes moveItems {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.BeforeDiscount {
+    text-decoration: line-through;
+    color: red;
+}
+
+.AfterDiscount {
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+.BuyButtonMovingBar {
+    outline: none;
+    background-color: darkblue;
+    color: white;
+    padding: 1px 5px;
+}
+
+.BuyButtonMovingBar:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+.AddToCartButtonMovingBar {
+    outline: none;
+    background-color: green;
+    color: white;
+}
+
+.AddToCartButtonMovingBar:hover {
+    background-color: white;
+    color: green;
+}
+
+.SaveButtonMovingBar {
+    outline: none;
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.SaveButtonMovingBar:hover {
+    background-color: white;
+    color: darkgoldenrod;
+}
+
+.SecondLastMainSection {
+    padding: 50px 60px;
+    margin: 20px 0px;
+}
+
+.LastSectionImg {
+    width: 200px;
+    height: 280px;
+    margin: 25px 0px;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.LastMainSectionVideo {
+    width: 800px;
+    border-radius: 50px;
+    border: double 20px white;
+    margin: 50px 0px 500px 0px;
+}
+
+/* FOOOTER */
+footer {
+    background-color: rgb(2, 51, 7);
+    border-top: 100px solid white;
+    padding: 10px 80px;
+}
+
+.footerSocialLogo {
+    width: 50px;
+}
+
+footer>hr {
+    margin: 50px 0px;
+}
+
+.FirstFooterDiv {
+    justify-content: space-around;
+}
+
+.expandMooreLessButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterButtonForLanguage {
+    padding: 0px 20px;
+    outline: 1px solid white;
+    background-color: transparent;
+}
