@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadhkir - تذكير</title>
+
+    <!-- CSS-LINK -->
+    <link rel="stylesheet" href="./procejt4.css">
+
+    <!--ICON-LINK-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.fade-in');
+
+            function checkPosition() {
+                sections.forEach((section) => {
+                    const position = section.getBoundingClientRect();
+
+                    // If the section is in the viewport, add the 'visible' class
+                    if (position.top < window.innerHeight && position.bottom >= 0) {
+                        section.classList.add('visible');
+                    } else {
+                        section.classList.remove('visible');
+                    }
+                });
+            }
+
+            // Run checkPosition on page load and scroll
+            window.addEventListener('load', checkPosition);
+            window.addEventListener('scroll', checkPosition);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.fade-in-Img');
+
+            function checkPosition() {
+                sections.forEach((section) => {
+                    const position = section.getBoundingClientRect();
+
+                    // If the section is in the viewport, add the 'visible' class
+                    if (position.top < window.innerHeight && position.bottom >= 0) {
+                        section.classList.add('visible');
+                    } else {
+                        section.classList.remove('visible');
+                    }
+                });
+            }
+
+            // Run checkPosition on page load and scroll
+            window.addEventListener('load', checkPosition);
+            window.addEventListener('scroll', checkPosition);
+        });
+    </script>
+
+    <header class="displayFlex justifyContentSpaceBetween alignItemsCenter">
+        <figure>
+            <a href="./test.html">
+                <img src="./images/IslamicLogo-removebg-preview.png" alt="Logo" class="headerLogo">
+            </a>
+        </figure>
+
+        <nav>
+            <ul class="displayFlex gap2rem">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="displayFlex alignItemsCenter gap5rem">
+            <div class="HeaderLanguageButton">
+                <a href="#" class="displayFlex alignItemsCenter gap2rem">
+                    <div class="displayFlex gap1rem">
+                        <p>English</p>
+                        <img src="./images/UK.png" alt="UK Flag" class="LanguageFlag">
+                    </div>
+                    <div class="MooreHeaderButtonLanguage">
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                        <div
+                            class="displayFlex alignItemsCenter justifyContentCenter gap1rem padding25px SecondLanguageHeaderOption">
+                            <p>Shqip</p>
+                            <img src="./images/AL.png" alt="UK Flag" class="LanguageFlag">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="Section1">
+            <article>
+                <div>
+                    <p class="fontweightBold MainP displayFlex justifyContentCenter">
+                        Announcing the Most Amazing Mobile App
+                    </p>
+
+                    <p class="fontweightBold MainP displayFlex justifyContentCenter margin15px">
+                        Muslims Will Ever Need!
+                    </p>
+
+                    <p class="fontweightBold MainP2  displayFlex justifyContentCenter margin15px colorGray">
+                        Introducing Tadhkir, a one-of-a-kind, exciting Muslim mobile application created by Muslims for
+                        our
+                        brothers and sisters.
+                    </p>
+
+                    <p class="fontweightBold  MainP2 displayFlex justifyContentCenter margin15px colorGray">
+                        At Ummah, you can share, buy or sell the halal way and connect with other
+                        Muslims from around the world!
+                    </p>
+                </div>
+
+                <figure class="displayFlex justifyContentCenter gap2rem margin15px">
+                    <a href="https://play.google.com/store/games?hl=en&gl=US">
+                        <img src="./images/playstore.PNG" alt="playstore">
+                    </a>
+
+                    <a href="https://www.apple.com/app-store/ ">
+                        <img src="./images/appstore.PNG" alt="AppleStore">
+                    </a>
+                </figure>
+
+                <figure class="displayFlex justifyContentCenter">
+                    <img src="./images/Screenshot_20240324_231725_Gallery-removebg-preview.png" alt="">
+                </figure>
+            </article>
+        </section>
+
+        <section class="Section2 BackGroundColorWhite">
+            <article>
+                <figure>
+                    <div class="displayFlex justifyContentSpaceBetween alignItemsCenter">
+                        <img src="./images/phonedesign1.png" alt="phonedesign1" class="phonedesign1Img fade-in-Img">
+                        <p class="colorBlack MainP fontweightBold fade-in">
+                            Get notyfied everywhere,don't matter the time and the place
+                        </p>
+                    </div>
+
+                    <div class="displayFlex justifyContentSpaceBetween alignItemsCenter fade-in-Img">
+                        <p class="colorBlack MainP fontweightBold fade-in">
+                            Read Quran online on your phone,whenver you want,what time you want
+                        </p>
+                        <img src="./images/phonedesign2.png" alt="phonedesign2" class="phonedesign2Img">
+                    </div>
+
+                    <div class="displayFlex justifyContentSpaceBetween alignItemsCenter">
+                        <img src="./images/phonedesign3.png" alt="phonedesign3" class="phonedesign3Img fade-in-Img">
+                        <p class="colorBlack MainP fontweightBold fade-in">
+                            Find the Qibla,don't matter the place where you are!
+                        </p>
+                    </div>
+                </figure>
+            </article>
+        </section>
+
+        <section class="Section3 displayGrid">
+            <article class="BackGroundColorWhite padding25px borderRadius15px MainFourCardsNotificationsIconsSection ">
+                <h1 class="colorBlack  ">
+                    <span
+                        class="material-symbols-outlined MainFourCardsNotificationsIcons MainFourCardsIcons padding25px borderRadius15px">
+                        notifications
+                    </span>
+                </h1>
+
+                <p class="colorBlack">
+                    Inform yourself about the 5 prayer times with the call to prayer.
+                </p>
+            </article>
+
+            <article class="BackGroundColorWhite padding25px borderRadius15px MainFourCardsComppasIconsSection">
+                <h1 class="colorBlack">
+                    <span
+                        class="material-symbols-outlined MainFourCardsComppasIcons MainFourCardsIcons padding25px borderRadius15px">
+                        explore
+                    </span>
+                </h1>
+
+                <p class="colorBlack">
+                    Find Qibla,don't matter the place.
+                </p>
+            </article>
+
+            <article class="BackGroundColorWhite padding25px borderRadius15px MainFourCardsBookIconsSection">
+                <h1 class="colorBlack">
+                    <span
+                        class="material-symbols-outlined MainFourCardsBookIcons MainFourCardsIcons padding25px borderRadius15px">
+                        import_contacts
+                    </span>
+                </h1>
+
+                <p class="colorBlack">
+                    Read Quran,whenever you want
+                </p>
+            </article>
+
+            <article class="BackGroundColorWhite padding25px borderRadius15px">
+                <h1 class="colorBlack  displayFlex">
+                    <span
+                        class="material-symbols-outlined  MainFourCardsDayIcons MainFourCardsIcons padding25px borderRadius15px">
+                        light_mode
+                    </span>
+                </h1>
+
+                <p class="colorBlack">
+                    Make your morning/night prayers and
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="displayFlex justifyContentSpaceBetween alignItemsCenter">
+            <figure>
+                <img src="./images/IslamicLogo-removebg-preview.png" alt="Logo">
+            </figure>
+
+            <div>
+                <p class="fontweightBold MainP displayFlex justifyContentCenter">
+                    Let's Stay in Touch.
+                </p>
+
+                <p class="colorGray fontweightBold MainP2 displayFlex justifyContentCenter">
+                    This is the first of its kind as a Muslim app developed with the help of Allah, and it offers a
+                    diverse, energetic variety of content that will motivate and inspire. Receive notifications about
+                    new features, updates, and offers. It’s just for you. Don’t hesitate.
+                </p>
+
+                <form class="displayFlex justifyContentCenter padding25px">
+                    <input type="email" placeholder="examp@gmail.com" maxlengt="25"
+                        class="FooterInput footerInputButtonSubmit">
+                    <button class="footerInputButtonSubmit footerButtonSubmit">
+                        Sing Me Up
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="displayFlex alignItemsCenter gap5rem  justifyContentSpaceBetween padding25px">
+            <ul>
+                <h1>Company</h1>
+                <li><a href="#" class="colorGray">About Us</a></li>
+                <li><a href="#" class="colorGray">Blog</a></li>
+                <li><a href="#" class="colorGray">Careers</a></li>
+                <li><a href="#" class="colorGray">Press</a></li>
+                <li><a href="#" class="colorGray">Contact</a></li>
+            </ul>
+
+            <ul>
+                <h1>Legal</h1>
+                <li><a href="#" class="colorGray">Privacy & Policy</a></li>
+                <li><a href="#" class="colorGray">Copyright & DCMA Policy</a></li>
+                <li><a href="#" class="colorGray">GDPR</a></li>
+                <li><a href="#" class="colorGray">Terms & Conditions</a></li>
+            </ul>
+
+            <ul>
+                <h1>Download</h1>
+                <li><a href="https://play.google.com/store/games?hl=en&gl=US" class="colorGray">Android App</a></li>
+                <li><a href="https://www.apple.com/app-store/ " class="colorGray">Copyright & DCMA Policy</a></li>
+            </ul>
+
+            <ul>
+                <h1>Follow Us</h1>
+                <div class="displayFlex gap2rem alignItemsCenter">
+                    <li><a href="https://www.instagram.com/" class="colorGray"><img src="./images/instagram.png"
+                                alt="Instagram Icon" class="FooterSocialMediaIcons"></a></li>
+                    <li><a href="https://www.facebook.com/" class="colorGray"><img src="./images/facebook.png"
+                                alt="FaceBook" class="FooterSocialMediaIcons"></a></li>
+                    <li><a href="https://www.twitter.com/" class="colorGray"><img src="./images/twitter.png"
+                                alt="Twitter" class="FooterSocialMediaIcons"></a></li>
+                    <li><a href="https://www.pinterest.com/" class="colorGray"><img src="./images/pinterest.png"
+                                alt="Pinters" class="FooterSocialMediaIcons"></a></li>
+                </div>
+            </ul>
+        </div>
+
+        <hr>
+        <div class="displayFlex justifyContentSpaceBetween padding25px">
+            <p class="displayFlex alignItemsCenter"><img src="./images/kosovo.png" alt="Kosovo" class="LanguageFlag">
+                Made
+                with love & passion in Kosov. 🌎
+                Enjoyed everywhere
+            </p>
+
+            <p>
+                © Tadhkir Technologies Limited. All rights reserved
+            </p>
+        </div>
+
+        <div class="displayFlex justifyContentCenter alignItemsCenter gap5rem padding25px">
+            <p class="displayFlex alignItemsCenter">
+                <a href="#">
+                    <img src="./images/UK.png" alt="UK flag" class="LanguageFlag">
+
+                    English
+                </a>
+            </p>
+
+            <p class="displayFlex alignItemsCenter">
+                <a href="#">
+                    <img src="./images/AL.png" alt="Albanian Flag" class="LanguageFlag">
+
+
+                    Shqip
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
