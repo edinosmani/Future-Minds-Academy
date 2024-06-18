@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.textColorWhite {
+    color: white;
+}
+
+.textColorGray {
+    color: gray;
+}
+
+.textColorDarkBlue {
+    color: darkblue;
+}
+
+.gap3rem {
+    gap: 3rem;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.justifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.marginBottom25px {
+    margin-bottom: 25px;
+}
+
+/* FONT */
+.platypi-uniquifier {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* HEADER */
+header {
+    background-color: rgb(23, 157, 219);
+    padding: 5px 50px;
+    border-bottom: 2px solid black;
+}
+
+#HeaderLogo {
+    width: 150px;
+}
+
+/* MAIN */
+.UnderHeaderSection {
+    border-bottom: 2px solid black;
+}
+
+.UnderHeaderSection>article>ul {
+    padding: 50px 50px;
+}
+
+
+.UnderHeaderSection>article>ul>li>a:hover {
+    color: darkblue;
+}
+
+.UnderHeaderSectionUl {
+    border-right: 2px solid black;
+}
+
+.UnderHeaderSectionSearch {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-right: 300px;
+}
+
+.UnderHeaderSectionSearchBar {
+    border: 2px solid gray;
+    padding: 2px;
+    margin-right: 50px;
+}
+
+.UnderHeaderSectioSearchIcon {
+    background-color: darkblue;
+    padding: 10px 15px;
+}
+
+.UnderHeaderSectioSearchIcon:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+.MainSection {
+    background-color: rgb(23, 157, 219);
+    padding: 10rem 5rem;
+}
+
+.BookImages {
+    width: 250px;
+}
+
+/*  */
+
+.BookImages {
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+    transform: translateY(190px);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-Img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(200px);
+}
+
+.fade-in-Img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-inText {
+    font-size: 25px;
+}
+
+.BuyBooksSection {
+    border-top: 2px solid black;
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.bookstoBuyImg {
+    width: 200px;
+    height: 280px;
+}
+
+.BuyButton {
+    padding: 15px;
+    background-color: white;
+    border: 2px solid darkblue;
+    color: darkblue;
+}
+
+.BuyButton:hover {
+    background-color: darkblue;
+    border: 2px solid white;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(23, 157, 219);
+    border-top: 2px solid black;
+}
+
+.footerSocialLogo {
+    width: 50px;
+}
+
+.underFooterDiv {
+    background-color: darkblue;
+    padding: 50px 25px;
+}
+
+.expandMooreLessButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterButtonForLanguage {
+    padding: 0px 20px;
+    outline: 1px solid white;
+    background-color: rgb(4, 4, 75);
+}
