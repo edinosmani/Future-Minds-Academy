@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.justifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.justifyContentCenter {
+    justify-content: Center;
+}
+
+
+.justifyContentSpaceEvenly {
+    justify-content: space-evenly;
+}
+
+.justifyContentSpaceAround {
+    justify-content: space-around;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.ColorWhite {
+    color: white;
+}
+
+.positionAbsolute {
+    position: absolute;
+}
+
+.borderRadius50 {
+    border-radius: 50%;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.BackGroundColorWhite {
+    background-color: white;
+}
+
+.TextAlignCenter {
+    text-align: center;
+}
+
+.marginBottom25px {
+    margin-bottom: 25px;
+}
+
+.gap3rem {
+    gap: 3rem;
+}
+
+/* HEADER */
+
+header {
+    background-color: white;
+}
+
+header>div {
+    padding: 20px 15px;
+}
+
+.HeaderLogo {
+    width: 100px;
+}
+
+header>nav {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 15px 10px;
+    background-color: #7baad2d7;
+}
+
+.HeaderSearchBarDiv {
+    background-color: #F0F8FF;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.HeaderSearchBarDiv>div>a {
+    border-right: 2px solid black;
+    padding: 13px 20px;
+    margin-right: 10px;
+    background-color: #DAA520;
+    border-radius: 14px 0px 0px 14px;
+}
+
+.HeaderSearchBarDiv>label {
+    border-left: 2px solid black;
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 0px 14px 14px 0px;
+}
+
+.HeaderSearchBartInput {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-right: 700px;
+}
+
+.SupportAgentIconOnDott {
+    background-color: greenyellow;
+    padding: 5px;
+    top: -4px;
+    right: 40px;
+}
+
+.ChatsIconNottifications {
+    background-color: darkblue;
+    padding: 2px 3px;
+    top: -13px;
+    right: -5px;
+}
+
+.OrdersIconNottifications {
+    background-color: red;
+    padding: 1px 2px;
+    top: -11px;
+    right: 15px;
+}
+
+.PaymentsIconNottifications {
+    background-color: darkgreen;
+    padding: 1px 2px;
+    top: -11px;
+    right: 25px;
+}
+
+.ShoppingCartIconNottifications {
+    background-color: darkgreen;
+    padding: 1px 2px;
+    top: -13px;
+    right: 10px;
+}
+
+/* MAIN */
+main {
+    background-color: gray;
+}
+
+.video-container {
+    margin-bottom: 100px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), transparent);
+    animation: content 1.5s infinite;
+    animation-delay: 16s;
+}
+
+.HrOfGlobalSalesOfTopLocations {
+    margin: 25px 0px;
+}
+
+.FlagsImg {
+    width: 35px;
+}
+
+.ColorDarkGreen {
+    color: rgb(10, 132, 10);
+    font-weight: bold;
+}
+
+.ColorGreenYellow {
+    color: yellow;
+    font-weight: bold;
+}
+
+.ColorYellow {
+    color: brown;
+    font-weight: bold;
+}
+
+.ColorGreen {
+    color: rgb(27, 182, 27);
+    font-weight: bold;
+}
+
+.CardsBorders {
+    margin: 50px 100px;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.MapCard {
+    width: 800px;
+}
+
+.RatingsSection {
+    grid-template-columns: auto auto;
+    padding: 0px 30px;
+}
+
+.StatesRatingsArticle {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 50px 20px;
+}
+
+.PeopleRatingsArticle {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.PeopleRatingsImg {
+    width: 80px;
+    height: 80px;
+}
+
+.colorGold {
+    color: goldenrod;
+}
+
+
+.BoxShadow {
+    box-shadow: 10px 5px 5px black;
+}
+
+.MainPackageTrackerVideo {
+    width: 80%;
+    border-radius: 15px;
+    border: 5px solid darkgreen;
+}
+
+.PackageTrackerVideoTextArticle {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 70px;
+}
+
+.FadeInTextContainer {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.animated-text {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.ArticlesContainersDiv {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 60px;
+}
+
+.ArticlesContainers {
+    padding: 30px 20px;
+    border-radius: 25px;
+}
+
+.ArticleImageTextHoverAppear {
+    font-size: 20px;
+    transform: translateY(-200px);
+    visibility: hidden;
+}
+
+.ArticlesContainers:hover .articleImage {
+    transform: translateY(-175px);
+    transition: 0.4s ease-in-out;
+}
+
+.ArticlesContainers:hover .ArticleImageTextHoverAppear {
+    visibility: visible;
+    transition-delay: 0.3s;
+    transition-behavior: ease-in-out;
+}
+
+.ArticlesContainers:hover .ArticleImageH2BottomAppear {
+    visibility: visible;
+    transition-delay: 0.3s;
+    transition-behavior: ease-in-out;
+}
+
+.ArticlesContainers:hover .ArticleImageIconHoverAppear {
+    visibility: visible;
+    transition-delay: 0.3s;
+    transition-behavior: ease-in-out;
+}
+
+.FourImagesArticleContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.ArticlesContainers:hover .FourImagesArticleContainer {
+    transform: translateY(-175px);
+    transition: 0.4s ease-in-out;
+}
+
+.ArticleImageIconHoverAppear {
+    transform: translateY(-150px);
+    visibility: hidden;
+}
+
+.ArticleImageH2BottomAppear {
+    visibility: hidden;
+    font-size: 30px;
+}
+
+.articleFourImage {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transform: translateY(0px);
+}
+
+.articleImage {
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transform: translateY(0px);
+}
+
+.FavoriteIconColor {
+    color: red;
+}
+
+.SaveIconColor {
+    color: goldenrod;
+}
+
+.EnterIconColor {
+    color: green;
+}
+
+
+.BestCompaniesPhotoSection {
+    border-radius: 25px;
+    margin: 30px 55px;
+    padding: 20px 30px;
+}
+
+.BestCompaniesPhotoArticle>figure {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.TechnologyLogosImg {
+    width: 100%;
+    height: 100%;
+}
+
+.BestCompaniesPhotoText {
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+/*  */
+.moving-bar {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15rem;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+}
+
+.items {
+    animation: moveItems 20s linear infinite;
+}
+
+.item {
+    flex: 0 0 10%;
+    text-align: center;
+    padding: 10px;
+}
+
+.item img {
+    max-width: 250px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.description {
+    margin-top: 5px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+
+
+.BeforeDiscount {
+    text-decoration: line-through;
+    color: red;
+}
+
+.AfterDiscount {
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+.BuyButtonMovingBar {
+    outline: none;
+    background-color: darkblue;
+    color: white;
+    padding: 1px 5px;
+}
+
+.BuyButtonMovingBar:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+.AddToCartButtonMovingBar {
+    outline: none;
+    background-color: green;
+    color: white;
+}
+
+.AddToCartButtonMovingBar:hover {
+    background-color: white;
+    color: green;
+}
+
+.SaveButtonMovingBar {
+    outline: none;
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.SaveButtonMovingBar:hover {
+    background-color: white;
+    color: darkgoldenrod;
+}
+
+.SecondLastMainSection {
+    padding: 50px 60px;
+    margin: 20px 0px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: gray;
+    border-top: 100px solid black;
+    padding: 40px 80px;
+    margin-top: 30px;
+}
+
+.footerSocialLogo {
+    width: 50px;
+}
+
+footer>hr {
+    margin: 50px 0px;
+}
+
+.FirstFooterDiv {
+    justify-content: space-around;
+}
+
+.expandMooreLessButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterButtonForLanguage {
+    padding: 0px 20px;
+    outline: 1px solid white;
+    background-color: transparent;
+}
+
+
+/* ANIMATIONS */
+
+.animate-border {
+    position: relative;
+}
+
+.animate-border::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease;
+}
+
+.animate-border:hover::before {
+    width: 100%;
+}
+
+@keyframes content {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.animated-text:nth-child(1) {
+    animation-delay: 24s;
+}
+
+.animated-text:nth-child(2) {
+    animation-delay: 24.5s;
+}
+
+.animated-text:nth-child(3) {
+    animation-delay: 25s;
+}
+
+.animated-text:nth-child(4) {
+    animation-delay: 25.5s;
+}
+
+.animated-text:nth-child(5) {
+    animation-delay: 26s;
+}
+
+@keyframes moveItems {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        .InputContainer {
+            margin: 2% 25%;
+            text-align: center;
+        }
+
+        .TableContainer {
+            margin: 3% 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="InputContainer">
+        <label for="name">Emri:</label>
+        <input type="text" id="name"><br>
+
+        <label for="surname">Mbiemri:</label>
+        <input type="text" id="surname"><br>
+
+        <label for="birthdate">Datalindjes:</label>
+        <input type="date" id="birthdate"><br>
+
+        <label for="birthplace">Vendi Lindjes:</label>
+        <input type="text" id="birthplace"><br>
+
+        <label for="personalNumber">Numri Personal:</label>
+        <input type="text" id="personalNumber"><br>
+
+        <label for="deadDate">Data e Vdekjes:</label>
+        <input type="date" id="deadDate"><br>
+
+        <label for="deadPlace">Vendi Vdekjes:</label>
+        <input type="text" id="deadPlace"><br>
+
+        <button type="submit" id="submitBtn">Submit</button>
+    </div>
+
+    <div class="TableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nr</th>
+                    <th>Emri</th>
+                    <th>Mbiemri</th>
+                    <th>Datalindjes</th>
+                    <th>Data Vdekjes</th>
+                    <th>Vendi Lindjes</th>
+                    <th>Vendi Varrimit</th>
+                    <th>Numri Personal</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="tablebody">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const submitBtn = document.querySelector('#submitBtn');
+        const tablebody = document.querySelector('.tablebody');
+        let entryCount = localStorage.getItem('entryCount') ? parseInt(localStorage.getItem('entryCount')) : 0;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTableData();
+        });
+
+        submitBtn.addEventListener('click', () => {
+            const name = document.querySelector('#name').value;
+            const surname = document.querySelector('#surname').value;
+            const birthdate = document.querySelector('#birthdate').value;
+            const birthplace = document.querySelector('#birthplace').value;
+            const personalNumber = document.querySelector('#personalNumber').value;
+            const deadDate = document.querySelector('#deadDate').value;
+            const deadPlace = document.querySelector('#deadPlace').value;
+
+            if (name && surname && birthdate && birthplace && personalNumber && deadDate && deadPlace) {
+                entryCount++;
+                localStorage.setItem('entryCount', entryCount);
+
+                const entryData = {
+                    emri: name,
+                    mbiemri: surname,
+                    ditlindja: birthdate,
+                    datavdekjes: deadDate,
+                    vendilindjes: birthplace,
+                    vendivdekjes: deadPlace,
+                    nrpersonal: personalNumber
+                };
+
+                localStorage.setItem(`entry${entryCount}`, JSON.stringify(entryData));
+                addTableRow(entryCount, entryData);
+
+                // Clear input fields after submission
+                document.querySelector('#name').value = '';
+                document.querySelector('#surname').value = '';
+                document.querySelector('#birthdate').value = '';
+                document.querySelector('#birthplace').value = '';
+                document.querySelector('#personalNumber').value = '';
+                document.querySelector('#deadDate').value = '';
+                document.querySelector('#deadPlace').value = '';
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        function loadTableData() {
+            for (let i = 1; i <= entryCount; i++) {
+                const entryData = JSON.parse(localStorage.getItem(`entry${i}`));
+                if (entryData) {
+                    addTableRow(i, entryData);
+                }
+            }
+        }
+
+        function addTableRow(index, data) {
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>${index}</td>
+                <td>${data.emri}</td>
+                <td>${data.mbiemri}</td>
+                <td>${data.ditlindja}</td>
+                <td>${data.datavdekjes}</td>
+                <td>${data.vendilindjes}</td>
+                <td>${data.vendivdekjes}</td>
+                <td>${data.nrpersonal}</td>
+                <td><button onclick="deleteRow(${index})">Delete</button></td>
+            `;
+            tablebody.appendChild(newRow);
+        }
+
+        function deleteRow(index) {
+            localStorage.removeItem(`entry${index}`);
+            loadTableData();
+        }
+
+        function loadTableData() {
+            tablebody.innerHTML = '';  // Clear existing rows
+            for (let i = 1; i <= entryCount; i++) {
+                const entryData = JSON.parse(localStorage.getItem(`entry${i}`));
+                if (entryData) {
+                    addTableRow(i, entryData);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

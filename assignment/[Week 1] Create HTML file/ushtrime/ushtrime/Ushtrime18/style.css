@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+.justifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.fontColorGray {
+    color: #908E9B;
+}
+
+.fontColorBlack {
+    color: black;
+}
+
+.fontColorWhite {
+    color: white;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.borderRadius50 {
+    border-radius: 50%;
+}
+
+.marginTopBottom {
+    margin: 20px;
+}
+
+/* ASIDE */
+
+aside {
+    background-color: rgba(0, 0, 0, 0.616);
+    flex-direction: column;
+    padding: 20px 0px;
+    height: 100%;
+    width: 10vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    justify-content: space-around;
+}
+
+aside>div {
+    gap: 10rem;
+    flex-direction: column;
+}
+
+aside>div>nav>ul>li {
+    margin: 30px 0px;
+}
+
+/*  MAIN-CONTAINER*/
+
+body>div {
+    overflow-y: scroll;
+    margin-left: 170px;
+}
+
+/* HEADER */
+
+header {
+    box-shadow: 0px 10px 2px 0px rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+    padding: 40px 20px;
+    width: 83.5vw;
+}
+
+header>div>a>h1>span {
+    color: #E1DFE9;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.HeaderSearchBar {
+    background-color: rgba(128, 128, 128, 0.36);
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.NotificationLogo {
+    position: relative;
+}
+
+.NotificationDot {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: darkmagenta;
+}
+
+
+.ProfilePhoto {
+    width: 70px;
+    height: 70px;
+    border: 3px solid darkmagenta;
+}
+
+/* MAIN */
+main {
+    background-color: #F2F5F5;
+    padding: 20px;
+}
+
+.FourArticlesSection {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 4rem;
+}
+
+.FourArticlesBorders {
+    background-color: #8739F9;
+    border-radius: 10px;
+    padding: 50px 20px;
+    border: 1px solid black;
+}
+
+.FourArticlesIcons {
+    background-color: #600dde;
+    padding: 20px;
+}
+
+.ThreeArticlesSection {
+    margin-top: 20px;
+    grid-template-columns: 240px 1fr 290px;
+}
+
+.ThreeArticlesBorders {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.ChartsImg {
+    width: 250px;
+    margin-top: 150px;
+}

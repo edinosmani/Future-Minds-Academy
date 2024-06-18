@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 2rem 0rem;
+            background-color: rgba(0, 128, 0, 0.53);
+        }
+
+        form {
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid black;
+            padding: 30px 100px;
+            border-radius: 15px;
+        }
+
+        button {
+            background-color: rgba(0, 128, 0, 0.53);
+            color: white;
+            padding: 10px 15px;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+
+        button:hover {
+            background-color: whitesmoke;
+            color: rgba(0, 128, 0, 0.53);
+            border: 1px solid rgba(0, 128, 0, 0.53);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="name">Emri:</label>
+        <input type="text" id="name"><br>
+
+        <label for="surname">Mbiemri:</label>
+        <input type="text" id="surname"><br>
+
+        <label for="birthdate">Datalindjes:</label>
+        <input type="date" id="birthdate"><br>
+
+        <label for="birthplace">Vendi Lindjes:</label>
+        <input type="text" id="birthplace"><br>
+
+        <label for="personalNumber">Numri Personal:</label>
+        <input type="text" id="personalNumber"><br>
+
+        <label for="deadDate">Data e Vdekjes:</label>
+        <input type="date" id="deadDate"><br>
+
+        <label for="deadPlace">Vendi Vdekjes:</label>
+        <input type="text" id="deadPlace"><br>
+
+        <button type="submit"><a href="./index.html">Submit</a></button>
+    </form>
+</body>
+
+</html>

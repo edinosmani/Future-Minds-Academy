@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Wish</title>
+
+    <!--CSS-LINK-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--GOOGLE-ICON-LINK-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <script>
+        const video = document.getElementById('video-bg');
+
+        video.addEventListener('ended', () => {
+            video.pause();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = [
+                'photo1.jpg',
+                'photo2.jpg',
+                'photo3.jpg',
+                'photo4.jpg',
+                'photo5.jpg',
+                'photo6.jpg',
+                'photo7.jpg',
+                'photo8.jpg',
+                'photo9.jpg',
+                'photo10.jpg',
+                'photo1.1.jpg',
+                'photo2.1.jpg',
+                'photo3.1.jpg',
+                'photo4.1.jpg',
+                'photo5.1.jpg',
+                'photo6.1.jpg',
+                'photo7.1.jpg',
+                'photo8.1.jpg',
+                'photo9.1.jpg',
+                'photo10.1.jpg',
+            ];
+
+            function preloadImages() {
+                for (let i = 0; i < images.length; i++) {
+                    new Image().src = images[i];
+                }
+            }
+            preloadImages();
+
+            const sections = document.querySelectorAll('.fade-in');
+
+            function checkPosition() {
+                sections.forEach((section) => {
+                    const position = section.getBoundingClientRect();
+
+                    // If the section is in the viewport, add the 'visible' class
+                    if (position.top < window.innerHeight && position.bottom >= 0) {
+                        section.classList.add('visible');
+                    } else {
+                        section.classList.remove('visible');
+                    }
+                });
+            }
+
+            // Run checkPosition on page load and scroll
+            window.addEventListener('load', checkPosition);
+            window.addEventListener('scroll', checkPosition);
+
+            const sectionsImg = document.querySelectorAll('.fade-in-Img');
+
+            function checkPositionImg() {
+                sectionsImg.forEach((section) => {
+                    const position = section.getBoundingClientRect();
+
+                    // If the section is in the viewport, add the 'visible' class
+                    if (position.top < window.innerHeight && position.bottom >= 0) {
+                        section.classList.add('visible');
+                    } else {
+                        section.classList.remove('visible');
+                    }
+                });
+            }
+
+            // Run checkPositionImg on page load and scroll
+            window.addEventListener('load', checkPositionImg);
+            window.addEventListener('scroll', checkPositionImg);
+
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const products = document.querySelector('.products');
+
+            let translateValue = 0;
+            const productWidth = document.querySelector('.product').offsetWidth;
+
+            nextBtn.addEventListener('click', () => {
+                if (translateValue > -((products.children.length - 1) * productWidth)) {
+                    translateValue -= productWidth;
+                    products.style.transform = `translateX(${translateValue}px)`;
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (translateValue < 0) {
+                    translateValue += productWidth;
+                    products.style.transform = `translateX(${translateValue}px)`;
+                }
+            });
+
+            const articles = document.querySelectorAll(".NewsPaperArticle");
+
+            function checkPositionArticles() {
+                articles.forEach((article, index) => {
+                    const position = article.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (position < windowHeight * 0.9 && position > -windowHeight * 0.9) {
+                        if (index % 2 === 0) {
+                            article.classList.add("slideInLeft");
+                        } else {
+                            article.classList.add("slideInRight");
+                        }
+                        article.style.opacity = 1;
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", checkPositionArticles);
+            checkPositionArticles(); // Check on page load
+
+            function checkPositionVideo() {
+                const position = video.getBoundingClientRect();
+
+                // If the video is in the viewport, add the animation class
+                if (position.top < window.innerHeight && position.bottom >= 0) {
+                    video.classList.add('animateVideo');
+                } else {
+                    video.classList.remove('animateVideo');
+                }
+            }
+
+            window.addEventListener('scroll', checkPositionVideo);
+            checkPositionVideo(); // Check on page load
+        });
+    </script>
+
+
+    <header>
+        <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+            <figure>
+                <a href="#">
+                    <img src="./Images/LOGO-removebg-preview.png" alt="Logo" class="HeaderLogo">
+                </a>
+            </figure>
+
+            <div class="HeaderSearchBarDiv displayFlex alignItemsCenter">
+                <div>
+                    <a href="#" class="displayFlex alignItemsCenter ColorWhite">
+                        <p>
+                            All
+                        </p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </a>
+                </div>
+
+                <input type="search" placeholder="Web-Wish" id="HeaderSearchBar" class="HeaderSearchBartInput">
+                <label for="HeaderSearchBar">
+                    <span class="material-symbols-outlined ColorWhite">
+                        search
+                    </span>
+                </label>
+            </div>
+
+            <div>
+                <a href="#">
+                    <span class="material-symbols-outlined animate-border" title="Settings">
+                        settings
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                <li>
+                    <h1>
+                        <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                            <p>
+                                All
+                            </p>
+                        </a>
+                    </h1>
+                </li>
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            language
+                        </span>
+                        <p>
+                            Country
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            translate
+                        </span>
+                        <p>
+                            Language
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            login
+                        </span>
+                        <p>
+                            Log In/Sign Up
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <p>
+                            Your Cart
+                        </p>
+
+                        <div class="borderRadius50 ShoppingCartIconNottifications positionAbsolute">
+                            <p class="ColorWhite">
+                                +3
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            payments
+                        </span>
+                        <p>
+                            Your Payments
+                        </p>
+
+                        <div class="borderRadius50 PaymentsIconNottifications positionAbsolute">
+                            <p class="ColorWhite">
+                                +1
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            orders
+                        </span>
+                        <p>
+                            Your Orders
+                        </p>
+
+                        <div class="borderRadius50 OrdersIconNottifications positionAbsolute">
+                            <p class="ColorWhite">
+                                +5
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            account_balance_wallet
+                        </span>
+                        <p>
+                            Your Balance
+                        </p>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            chat
+                        </span>
+                        <p>
+                            Chats
+                        </p>
+
+                        <div class="borderRadius50 ChatsIconNottifications positionAbsolute">
+                            <p class="ColorWhite">
+                                +3
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#" class="displayFlex flexDirectionColumn alignItemsCenter animate-border">
+                        <span class="material-symbols-outlined">
+                            support_agent
+                        </span>
+                        <p>
+                            Support Agent's
+                        </p>
+
+                        <div class="borderRadius50 SupportAgentIconOnDott positionAbsolute">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="video-container">
+            <video autoplay muted class="video-bg positionAbsolute">
+                <source src="./video/Global Network Logo Reveal_free.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content positionAbsolute">
+                <h1>Welcome to Our Website</h1>
+                <p>
+                    Enjoy!
+                </p>
+        </section>
+
+
+        <section class="RatingsSection">
+            <article>
+                <h2 class="TextAlignCenter">
+                    States With Where WebWish is Most Used In
+                </h2>
+
+                <div class="displayGrid StatesRatingsArticle CardsBorders BackGroundColorWhite StatesRatingsSections">
+                    <div>
+                        <div class="displayFlex justifyContentSpaceEvenly">
+                            <h3>
+                                Countrys
+                            </h3>
+
+                            <hr>
+
+                            <h3>
+                                People's
+                            </h3>
+
+                            <hr>
+
+                            <h3>
+                                Ratings
+                            </h3>
+                        </div>
+
+                        <hr class="HrOfGlobalSalesOfTopLocations">
+
+                        <div class="displayFlex justifyContentSpaceAround">
+                            <div class="displayFlex">
+                                <img src="../CssFinalProcejt/images/UsaFlag.jpeg" alt="USA" class="FlagsImg">
+                                <p>USA</p>
+                            </div>
+
+                            <p>123.920</p>
+                            <p class="ColorGreen">Happy</p>
+
+                        </div>
+
+                        <hr class="HrOfGlobalSalesOfTopLocations">
+
+                        <div class="displayFlex justifyContentSpaceAround">
+                            <div class="displayFlex">
+                                <img src="../CssFinalProcejt/images/GermanyFlag.webp" alt="Germany" class="FlagsImg">
+                                <p>Germany</p>
+                            </div>
+
+
+                            <p>234.300</p>
+                            <p class="ColorDarkGreen">Super-Happy</p>
+
+                        </div>
+
+
+                        <hr class="HrOfGlobalSalesOfTopLocations">
+
+                        <div class="displayFlex justifyContentSpaceAround">
+                            <div class="displayFlex">
+                                <img src="../CssFinalProcejt/images/astraliafLAG.png" alt="Australia" class="FlagsImg">
+                                <p>Australia </p>
+                            </div>
+
+
+                            <p>17.360</p>
+                            <p class="ColorYellow">Alirght</p>
+
+                        </div>
+
+                        <hr class="HrOfGlobalSalesOfTopLocations">
+
+
+                        <div class="displayFlex justifyContentSpaceAround">
+                            <div class="displayFlex">
+                                <img src="../CssFinalProcejt/images/UkFlag.png" alt="UK" class="FlagsImg">
+                                <p>United Kingdom</p>
+                            </div>
+
+
+                            <p>123.690</p>
+                            <p class="ColorGreenYellow">Good</p>
+
+                        </div>
+
+                        <hr class="HrOfGlobalSalesOfTopLocations">
+
+
+                        <div class="displayFlex justifyContentSpaceAround">
+                            <div class="displayFlex">
+                                <img src="../CssFinalProcejt/images/romaniaFlag.png" alt="Romania" class="FlagsImg">
+                                <p>Romania</p>
+                            </div>
+
+                            <p>345.600</p>
+
+                            <p class="ColorDarkGreen">Super-Happy</p>
+
+                        </div>
+
+                        <hr class="HrOfGlobalSalesOfTopLocations">
+
+                        <div class="displayFlex justifyContentSpaceAround">
+                            <div class="displayFlex">
+                                <img src="../Ushtrime14/images/AL.png" alt="Albania" class="FlagsImg">
+                                <p>Albania</p>
+                            </div>
+
+
+                            <p>555.550</p>
+                            <p class="ColorDarkGreen">Super-Happy</p>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="TextAlignCenter">
+                            Continental Spotlight: Our Most Engaged Audience
+                        </h2>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22043553.9709031!2d1.0716562637877733!3d47.58989659393055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEurope!5e0!3m2!1sen!2s!4v1713715628097!5m2!1sen!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="MapCard">
+                        </iframe>
+                    </div>
+                </div>
+            </article>
+
+            <article class="PeopleRatingsArticle displayGrid">
+                <div class="CardsBorders BackGroundColorWhite BoxShadow">
+                    <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                        <img src="Images/image.png" alt="person" class="borderRadius50 PeopleRatingsImg">
+                        <h3>
+                            John Smith
+                        </h3>
+                        <p>
+                            (London,UK)
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            I really like this website,its easy to work with even my mom orders from it,crazy
+                            discounts,and a very fast delivery and it has so many options
+                        </p>
+
+                        <div class="TextAlignCenter">
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="CardsBorders BackGroundColorWhite BoxShadow">
+                    <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                        <img src="./Images/person2.jpeg" alt="person" class="borderRadius50 PeopleRatingsImg">
+
+                        <h3>
+                            Johan Flick
+                        </h3>
+
+                        <p>
+                            (Frankfurt,Germany)
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            Based on our experience with your online shopping website, i would rate it 4 stars! The
+                            site offers a seamless shopping experience with a user-friendly interface and a wide range
+                            of products. The discounts and deals are impressive, and the delivery is incredibly fast.
+                            Overall, it's been a great shopping experience, and we highly recommend it!
+                        </p>
+
+                        <div class="TextAlignCenter">
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined ">
+                                grade
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="CardsBorders BackGroundColorWhite BoxShadow">
+                    <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                        <img src="./Images/person3.jpeg" alt="person" class="borderRadius50 PeopleRatingsImg">
+
+                        <h3>
+                            Maria Ortega
+                        </h3>
+
+                        <p>
+                            (Paris,France)
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            After exploring your online shopping website, we would rate it 3 stars. While the website
+                            offers a decent shopping experience with a variety of products, we found the navigation to
+                            be a bit confusing at times. The discounts are average, and the delivery was satisfactory.
+                            Overall, it's a decent shopping destination, but there are areas that could be improved for
+                            a smoother shopping experience.
+                        </p>
+
+                        <div class="TextAlignCenter">
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined ">
+                                grade
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="CardsBorders BackGroundColorWhite BoxShadow">
+                    <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                        <img src="./Images/profile.webp" alt="person" class="borderRadius50 PeopleRatingsImg">
+
+                        <h3>
+                            Lirim Topalli
+                        </h3>
+
+                        <p>
+                            (Gjilan,Kosovo)
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            Without a doubt, your online shopping website deserves a perfect 5-star rating! The website
+                            is exceptionally user-friendly, making shopping a breeze for all. The discounts and deals
+                            are unbeatable, and the delivery speed is simply impressive. With such a wide range of
+                            products, it's no wonder everyone loves shopping here. Thank you for providing such a
+                            fantastic experience!
+                        </p>
+
+                        <div class="TextAlignCenter">
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="CardsBorders BackGroundColorWhite BoxShadow">
+                    <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                        <img src="./Images/profile.webp" alt="person" class="borderRadius50 PeopleRatingsImg">
+
+                        <h3>
+                            Lek Hoxha
+                        </h3>
+
+                        <p>
+                            (Tiran,Albania)
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            We are thrilled to give your online shopping website a glowing 5-star rating! Our experience
+                            has been nothing short of amazing. The website is incredibly user-friendly, offering a vast
+                            selection of products at fantastic prices. The discounts are unbeatable, and the delivery is
+                            lightning-fast. We couldn't be happier with our shopping experience and will definitely be
+                            returning for more. Thank you for providing such an exceptional service!
+                        </p>
+
+                        <div class="TextAlignCenter">
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="CardsBorders BackGroundColorWhite BoxShadow">
+                    <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                        <img src="./Images/person4.jpeg" alt="person" class="borderRadius50 PeopleRatingsImg">
+
+                        <h3>
+                            Michael Johnson
+                        </h3>
+
+                        <p>
+                            (Alabama,USA)
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            We are delighted to give your online shopping website a glowing 5-star rating! Our
+                            experience has been nothing short of exceptional. The website's user-friendly interface,
+                            combined with an extensive product selection and unbeatable discounts, truly sets it apart.
+                            The delivery speed is remarkable, making shopping a breeze. We consider your website an
+                            advantage over giants like Amazon and eBay, and we couldn't be happier with our experience!
+                        </p>
+
+                        <div class="TextAlignCenter">
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined colorGold">
+                                grade
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="TextAlignCenter CardsBorders BoxShadow BackGroundColorWhite">
+                <h3>
+                    Overall Rating's
+                </h3>
+
+                <div>
+                    <span class="material-symbols-outlined colorGold">
+                        grade
+                    </span>
+                    <span class="material-symbols-outlined colorGold">
+                        grade
+                    </span>
+                    <span class="material-symbols-outlined colorGold">
+                        grade
+                    </span>
+                    <span class="material-symbols-outlined colorGold">
+                        grade
+                    </span>
+                    <span class="material-symbols-outlined">
+                        grade
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="displayGrid PackageTrackerVideoTextArticle">
+            <article>
+                <div>
+                    <video src="./video/InShot_20240422_191746840.mp4" loop muted autoplay
+                        class="MainPackageTrackerVideo"></video>
+                </div>
+            </article>
+
+            <article>
+                <div class="FadeInTextContainer displayFlex flexDirectionColumn gap2rem">
+                    <span class="animated-text">Follow your Package location </span>
+                    <span class="animated-text">See your Package safety</span>
+                    <span class="animated-text">See how many kilometres has it traveled?</span>
+                    <span class="animated-text">See in wich type of in what type of vehicle it is traveling</span>
+                    <span class="animated-text">And and how long it takes to reach you</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="displayGrid ArticlesContainersDiv gap2rem">
+
+            <article class=" ArticlesContainers TextAlignCenter BackGroundColorWhite">
+                <h2>Technologyc Item's</h2>
+
+                <figure>
+                    <img src="../Ushtrime16/images/Products/artcile.webp" alt="article" class="articleImage">
+                </figure>
+
+                <p class="ArticleImageTextHoverAppear">
+                    The newest technology continues to evolve, offering cutting-edge solutions that redefine the
+                    future.
+                    Our company specializes in offering the latest tech innovations, providing customers with
+                    state-of-the-art products that are both innovative and reliable.
+                </p>
+
+                <div class="displayFlex alignItemsCenter justifyContentCenter gap1rem ArticleImageIconHoverAppear">
+                    <a href="#">
+                        <span class="material-symbols-outlined FavoriteIconColor" title="Favorite">
+                            favorite
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined SaveIconColor" title="Save">
+                            star
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined EnterIconColor" title="Enter">
+                            login
+                        </span>
+                    </a>
+                </div>
+
+                <h2 class="ArticleImageH2BottomAppear">Technologyc Item's</h2>
+            </article>
+
+            <article class="TextAlignCenter BackGroundColorWhite ArticlesContainers">
+                <h2> Clothes With Good Material and Prices</h2>
+
+                <figure>
+                    <img src="../Ushtrime16/images/Products/article2.jpeg" alt="article" class="articleImage">
+                </figure>
+
+                <p class="ArticleImageTextHoverAppear">
+
+                    Our company specializes in providing customers with a wide selection of clothing items crafted
+                    from
+                    premium materials known for their durability and comfort. Despite our commitment to quality, we
+                    strive to keep our prices competitive and accessible to all, ensuring that everyone can enjoy
+                    stylish and well-made clothing without breaking the bank.
+                </p>
+
+                <div class="displayFlex alignItemsCenter justifyContentCenter gap1rem ArticleImageIconHoverAppear">
+                    <a href="#">
+                        <span class="material-symbols-outlined FavoriteIconColor" title="Favorite">
+                            favorite
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined SaveIconColor" title="Save">
+                            star
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined EnterIconColor" title="Enter">
+                            login
+                        </span>
+                    </a>
+                </div>
+
+                <h2 class="ArticleImageH2BottomAppear">Clothes with good Material and Prices</h2>
+            </article>
+
+            <article class="TextAlignCenter BackGroundColorWhite  ArticlesContainers">
+                <h2>Best Products For a Smart Home</h2>
+
+                <div>
+                    <figure class="displayGrid FourImagesArticleContainer">
+                        <img src="../Ushtrime16/images/Products/article 1of4.jpg" alt="article"
+                            class="articleFourImage">
+
+                        <img src="../Ushtrime16/images/Products/article 2of4.jpeg" alt="article"
+                            class="articleFourImage">
+
+                        <img src="../Ushtrime16/images/Products/article3of4.jpg" alt="artcile" class="articleFourImage">
+
+                        <img src="../Ushtrime16/images/Products/article 4of4.avif" alt="artcile"
+                            class="articleFourImage">
+                    </figure>
+                </div>
+
+                <p class="ArticleImageTextHoverAppear">
+                    Explore the best products for a smart home at unbeatable prices! From smart bulbs and plugs to
+                    security cameras and thermostats, our selection is designed to enhance your living space with
+                    convenience and efficiency. Transform your home into a smart oasis without breaking the bank.
+                    Shop now and elevate your lifestyle!
+                </p>
+
+                <div class="displayFlex alignItemsCenter justifyContentCenter gap1rem ArticleImageIconHoverAppear">
+                    <a href="#">
+                        <span class="material-symbols-outlined FavoriteIconColor" title="Favorite">
+                            favorite
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined SaveIconColor" title="Save">
+                            star
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined EnterIconColor" title="Enter">
+                            login
+                        </span>
+                    </a>
+                </div>
+
+                <h2 class="ArticleImageH2BottomAppear">Best Products For a Smart Home</h2>
+            </article>
+
+            <article class="TextAlignCenter BackGroundColorWhite ArticlesContainers">
+                <h2> The Best Products For External Use</h2>
+
+                <figure>
+                    <img src="../Ushtrime16/images/Products/article4.jpeg" alt="article" class="articleImage">
+                </figure>
+
+                <p class="ArticleImageTextHoverAppear">
+                    Discover our selection of high-quality external use products, designed to enhance your skincare
+                    routine and outdoor experiences. From moisturizers and sunscreens to protective gear, our
+                    affordable range ensures you can enjoy premium quality without breaking the bank.
+                </p>
+
+                <div class="displayFlex alignItemsCenter justifyContentCenter gap1rem ArticleImageIconHoverAppear">
+                    <a href="#">
+                        <span class="material-symbols-outlined FavoriteIconColor" title="Favorite">
+                            favorite
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined SaveIconColor" title="Save">
+                            star
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined EnterIconColor" title="Enter">
+                            login
+                        </span>
+                    </a>
+                </div>
+
+                <h2 class="ArticleImageH2BottomAppear">The Best Products For External Use</h2>
+            </article>
+        </section>
+
+        <section class="BestCompaniesPhotoSection BackGroundColorWhite">
+            <article class="BestCompaniesPhotoArticle">
+                <h2 class="TextAlignCenter">
+                    Global Partnerships: Driving Innovation and Shaping the Future
+                </h2>
+
+                <figure class="displayGrid">
+                    <img src="./Images/bestTechnologyLogosPhoto.png" alt="bestTechnologyLogosPhoto"
+                        class="TechnologyLogosImg">
+
+                    <img src="./Images/bestCompaniesPhoto.png" alt="bestTechnologyLogosPhoto"
+                        class="TechnologyLogosImg">
+                </figure>
+
+                <p class="TextAlignCenter BestCompaniesPhotoText">
+                    Our partnerships include some of the world's largest and most renowned companies, spanning diverse
+                    sectors such as technology, finance, healthcare, and more. These collaborations drive innovation,
+                    reshape industries, and set new benchmarks for success. Together, we pioneer transformative
+                    solutions that address global challenges and shape the future of business. Our network of partners
+                    reflects our commitment to excellence and our shared vision for a brighter tomorrow. Join us in this
+                    journey of innovation and collaboration, where together, we can achieve greater heights and make a
+                    lasting impact on the world
+                </p>
+            </article>
+        </section>
+
+        <section class="BackGroundColorWhite">
+            <div class="moving-bar">
+                <h1 class="TextAlignCenter">
+                    Discounted Items
+                </h1>
+
+                <hr>
+                <div class="items displayFlex alignItemsCenter gap3rem">
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/1.1.jpg" alt="Photo 1">
+                        <div class="description">
+                            <p>Computer Desk</p>
+
+                            <p class="BeforeDiscount">299$</p>
+                            <p class="AfterDiscount">89.7$</p>
+
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/2.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Pull-Up-Bar</p>
+
+                            <p class="BeforeDiscount">200$</p>
+                            <p class="AfterDiscount">50$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/3.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Iphone 13</p>
+
+                            <p class="BeforeDiscount">689$</p>
+                            <p class="AfterDiscount">344.5$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/4.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Wood Cutting Machine</p>
+
+                            <p class="BeforeDiscount">567$</p>
+                            <p class="AfterDiscount">283.5$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/5.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>TreadMill</p>
+
+                            <p class="BeforeDiscount">720$</p>
+                            <p class="AfterDiscount">180$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/6.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Stationary-Bike</p>
+
+                            <p class="BeforeDiscount">450$</p>
+                            <p class="AfterDiscount">225$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/7.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Venom Boxing Gloves</p>
+
+                            <p class="BeforeDiscount">200$</p>
+                            <p class="AfterDiscount">40$</p>
+
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/8.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Tool-Box</p>
+
+                            <p class="BeforeDiscount">250$</p>
+                            <p class="AfterDiscount">62.5$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/1.1.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Computer Desk</p>
+                            <p class="BeforeDiscount">299$</p>
+                            <p class="AfterDiscount">89.7$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/2.2.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Pull-Up-Bar</p>
+
+                            <p class="BeforeDiscount">200$</p>
+                            <p class="AfterDiscount">50$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/3.3.jpg" alt="Photo 1">
+                        <div class="description">
+                            <p>Iphone 13</p>
+
+                            <p class="BeforeDiscount">689$</p>
+                            <p class="AfterDiscount">344.5$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/4.4.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Wood Cutting Machine</p>
+
+                            <p class="BeforeDiscount">567$</p>
+                            <p class="AfterDiscount">283.5$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/5.5.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>TreadMill</p>
+
+                            <p class="BeforeDiscount">720$</p>
+                            <p class="AfterDiscount">180$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/6.6.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Stationary-Bike</p>
+
+                            <p class="BeforeDiscount">450$</p>
+                            <p class="AfterDiscount">225$</p>
+
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/7.7.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Venom Boxing Gloves</p>
+
+                            <p class="BeforeDiscount">200$</p>
+                            <p class="AfterDiscount">40$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/8.8.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Tool-Box</p>
+
+                            <p class="BeforeDiscount">250$</p>
+                            <p class="AfterDiscount">62.5$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/1.1.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Computer Desk</p>
+                            <p class="BeforeDiscount">299$</p>
+                            <p class="AfterDiscount">89.7$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Ushtrime16/images/Discounts/2.2.jpg" alt="Photo 2">
+                        <div class="description">
+                            <p>Pull-Up-Bar</p>
+
+                            <p class="BeforeDiscount">200$</p>
+                            <p class="AfterDiscount">50$</p>
+
+                            <button class="SaveButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <p>
+                                    Save
+                                </p>
+                            </button>
+
+                            <button class="AddToCartButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    add_shopping_cart
+                                </span>
+                                <p>
+                                    Add To Cart
+                                </p>
+                            </button>
+
+                            <button class="BuyButtonMovingBar">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p>
+                                    Buy
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="displayFlex alignItemsCenter FirstFooterDiv">
+            <figure>
+                <a href="#">
+                    <img src="./Images/LOGO-removebg-preview.png" alt="Logo">
+                </a>
+            </figure>
+
+
+            <ul class="displayFlex alignItemsCenter gap3rem">
+                <div>
+                    <h4>
+                        Company
+                    </h4>
+
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Media Kit</a>
+                    </li>
+
+                    <li>
+                        <a href="#">In the news</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </div>
+
+                <div>
+                    <h4>
+                        Support
+                    </h4>
+
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">User Guide</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Examples</a>
+                    </li>
+                </div>
+
+                <div>
+                    <h4>
+                        Policies
+                    </h4>
+
+                    <li>
+                        <a href="#">Comunity Guidlines</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Privacy Policies</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Legal</a>
+                    </li>
+                </div>
+
+                <div>
+                    <h4 class="displayFlex marginBottom25px justifyContentCenter">
+                        Social Media Link
+                    </h4>
+
+                    <div class="displayFlex alignItemsCenter gap1rem">
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="../Ushtrime14/images/facebook.png" alt="Facebook Logo"
+                                    class="footerSocialLogo">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="../Ushtrime14/images/instagram.png" alt="instagram Logo"
+                                    class="footerSocialLogo">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.pinterest.com/">
+                                <img src="../Ushtrime14/images/pinterest.png" alt="Pinterset Logo"
+                                    class="footerSocialLogo">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.twitter.com/">
+                                <img src="../Ushtrime14/images/twitter.png" alt="Twitter Logo" class="footerSocialLogo">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+
+        <hr>
+
+        <div class="displayFlex alignItemsCenter gap1rem">
+            <p>Terms & Condtisions</p>
+
+            <span>|</span>
+
+            <p>Privacy Policies</p>
+
+            <span>|</span>
+
+            <p>Security</p>
+        </div>
+
+        <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+            <div class="displayFlex alignItemsCenter">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+                <p>Filan Fisteku, Gjilan, Kosovo</p>
+            </div>
+
+            <div>
+                <button class="displayFlex alignItemsCenter gap3rem FooterButtonForLanguage">
+                    <p>
+                        English
+                    </p>
+
+                    <div class="expandMooreLessButtons">
+                        <span class="material-symbols-outlined">
+                            expand_less
+                        </span>
+
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+
+            <div class="displayFlex alignItemsCenter gap1rem">
+                <span class="material-symbols-outlined">
+                    copyright
+                </span>
+                <p>Web-Wish inc.</p>
+            </div>
+
+            <div>
+                <h5 class="displayFlex justifyContentSpaceBetween marginBottom25px">Find Us In</h5>
+
+                <div class="displayFlex alignItemsCenter gap1rem">
+                    <a href="https://www.appstore.com/" target="_blank">
+                        <img src="../Ushtrime14/images/appstore.PNG" alt="appstore">
+                    </a>
+
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../Ushtrime14/images/playstore.PNG" alt="playstore">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
