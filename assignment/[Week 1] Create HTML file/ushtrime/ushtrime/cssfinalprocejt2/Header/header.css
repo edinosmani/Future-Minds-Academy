@@ -1,0 +1,113 @@
+/*  */
+
+body {
+    background-color: rgba(128, 128, 128, 0.545);
+}
+
+.displayflex {
+    display: flex;
+}
+
+.alignitemscenter {
+    align-items: center;
+}
+
+.justifycontentspacebetween {
+    justify-content: space-between;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.BackgroundColorWhite {
+    background-color: white;
+}
+
+.padding15px {
+    padding: 15px;
+}
+
+.bordershadow {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.489);
+}
+
+.BorderRadius50 {
+    border-radius: 50%;
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+.visibilityhidden {
+    visibility: hidden;
+}
+
+.postionrelative {
+    position: relative;
+}
+
+.postionabsolute {
+    position: absolute;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+#search {
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 3px solid gray;
+}
+
+#search:focus {
+    border-bottom: 3px solid darkviolet;
+}
+
+.HeaderIconHoverShadow:hover {
+    box-shadow: 25px rgba(0, 0, 0, 0.489);
+}
+
+.NumberofIconNotificationsHeader {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    padding: 1px;
+    top: -13px;
+    right: -2px;
+}
+
+.HeaderNottoficationPopUp {
+    background-color: white;
+    width: 250px;
+    top: -5px;
+    left: -250px;
+}
+
+.HeaderNottoficationPopUp>p {
+    margin: 3px;
+}
+
+.HeaderNottoficationPopUp>p:hover {
+    background-color: orangered;
+}
+
+
+.VisibilityVisibile:hover .HeaderNottoficationPopUp {
+    visibility: visible;
+}

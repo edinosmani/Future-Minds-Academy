@@ -1,0 +1,94 @@
+/*  */
+
+body {
+    background-color: gray;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.justifycontentspacebetween {
+    justify-content: space-between;
+}
+
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.sidewayspaddingofcards {
+    padding: 0px 50px;
+}
+
+
+.BackgroundColorWhite {
+    background-color: white;
+}
+
+.borderradiusofcards {
+    border-radius: 10px;
+}
+
+.padding15px {
+    padding: 15px;
+}
+
+.postionrelative {
+    position: relative;
+}
+
+.postionabsolute {
+    position: absolute;
+}
+
+.bordershadow {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.222);
+}
+
+/* MAIN */
+
+.FlagsImg {
+    width: 30px;
+}
+
+.CountryInfoDiv {
+    width: 20%;
+    margin-right: 50px;
+}
+
+.Map {
+    width: 1000px;
+    height: 370px;
+    margin: 20px;
+}
+
+.PositoinTopLeftForIcons {
+    top: -25px;
+    left: -30px;
+}
+
+.HeadersIconsCommands {
+    border-radius: 5%;
+    color: white;
+    padding: 25px;
+}
+
+.GlobalSalesbyTopLocationsIcon {
+    background-color: green;
+    margin: 10px;
+}
+
+
+.GlobalSalesbyTopLocationsTitle {
+    top: -10px;
+    left: 80px;
+}
+
+h2 {
+    margin-bottom: 80px;
+}

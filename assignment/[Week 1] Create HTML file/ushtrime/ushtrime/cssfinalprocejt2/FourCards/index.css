@@ -1,0 +1,89 @@
+/*  */
+body {
+    background-color: rgba(128, 128, 128, 0.373);
+    margin: 50px;
+}
+
+.BackgroundColorWhite {
+    background-color: white;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.alignitemscenter {
+    align-items: center;
+}
+
+.justifycontentspacebetween {
+    justify-content: space-between;
+}
+
+.sidewayspaddingofcards {
+    padding: 0px 50px;
+}
+
+.borderradiusofcards {
+    border-radius: 10px;
+}
+
+.padding15px {
+    padding: 15px;
+}
+
+.postionrelative {
+    position: relative;
+}
+
+.postionabsolute {
+    position: absolute;
+}
+
+.bordershadow {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.222);
+}
+
+.fontcolorgray {
+    color: gray;
+}
+
+.displaygrid {
+    display: grid;
+}
+
+/* MAIN */
+
+
+.HeadersIconsCommands {
+    border-radius: 5%;
+    color: white;
+    padding: 25px;
+}
+
+.BookingsIcon {
+    background-color: rgb(250, 182, 24);
+}
+
+.WebsiteVisitIcon {
+    background-color: palevioletred;
+}
+
+.RevenueIcon {
+    background-color: green;
+}
+
+.FollowersIcon {
+    background-color: rgb(0, 115, 255);
+}
+
+.PositoinTopLeftForIcons {
+    top: -10px;
+    left: 20px;
+}
+
+.ContainerofFourArticlesOfPage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}

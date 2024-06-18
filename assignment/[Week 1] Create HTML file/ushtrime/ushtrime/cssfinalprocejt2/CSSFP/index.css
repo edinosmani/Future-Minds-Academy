@@ -1,0 +1,210 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.justifySpaceBetween {
+    justify-content: space-between;
+}
+
+
+.AlignItemsCenter {
+    align-items: center;
+}
+
+.gap1rem {
+    gap: 1rem;
+}
+
+.gap2rem {
+    gap: 2rem;
+}
+
+.BorderRadius50 {
+    border-radius: 50%;
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+.visibilityhidden {
+    visibility: hidden;
+}
+
+.postionrelative {
+    position: relative;
+}
+
+.postionabsolute {
+    position: absolute;
+}
+
+.padding25px {
+    padding: 25px;
+}
+
+.bordershadow {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.489);
+}
+
+.padding15px {
+    padding: 15px;
+}
+
+.BackgroundColorWhite {
+    background-color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* ASIDE */
+
+aside {
+    background-image: url(../Aside/images/sidebar-1.jpg);
+    height: 150vh;
+    width: 50vh;
+    padding: 15px 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+aside>nav>ul {
+    margin: 40px 0px;
+}
+
+aside>nav>ul>li>a {
+    padding: 20px;
+    margin: 0px 10px;
+    color: white;
+}
+
+.asidebarli {
+    margin: 10px 0px;
+}
+
+.asidebarli:hover {
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+}
+
+.AsideBarAvatar {
+    width: 60px;
+}
+
+.AsideBarDashboard {
+    background-color: rgba(226, 44, 99, 0.888);
+    padding: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* HEADER */
+#search {
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.559);
+}
+
+#search:focus {
+    border-bottom: 3px solid darkviolet;
+}
+
+.HeaderIconHoverShadow:hover {
+    box-shadow: 25px rgba(0, 0, 0, 0.489);
+}
+
+.NumberofIconNotificationsHeader {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    padding: 1px;
+    top: -13px;
+    right: -2px;
+}
+
+.HeaderNottoficationPopUp {
+    background-color: white;
+    width: 250px;
+    top: -5px;
+    left: -250px;
+}
+
+.HeaderNottoficationPopUp>p {
+    margin: 3px;
+}
+
+.HeaderNottoficationPopUp>p:hover {
+    background-color: orangered;
+}
+
+
+.VisibilityVisibile:hover .HeaderNottoficationPopUp {
+    visibility: visible;
+}
+
+/* MAIN */
+
+.FlagsImg {
+    width: 30px;
+}
+
+.CountryInfoDiv {
+    width: 20%;
+    margin-right: 50px;
+}
+
+.Map {
+    width: 1000px;
+    height: 370px;
+    margin: 20px;
+}
+
+.PositoinTopLeftForIcons {
+    top: -25px;
+    left: -30px;
+}
+
+.HeadersIconsCommands {
+    border-radius: 5%;
+    color: white;
+    padding: 25px;
+}
+
+.GlobalSalesbyTopLocationsIcon {
+    background-color: green;
+    margin: 10px;
+}
+
+
+.GlobalSalesbyTopLocationsTitle {
+    top: -10px;
+    left: 80px;
+}
+
+h2 {
+    margin-bottom: 80px;
+}
