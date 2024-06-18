@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibloteka-Ime</title>
+
+    <!--FAV-ICON-->
+    <link rel="shortcut icon" href="./images/Bib-removebg-preview.png" type="image/x-icon">
+
+    <!--CSS-LINK-->
+    <link rel="stylesheet" href="./procejt5.css">
+
+    <!--GOOGLE-ICONS-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--GOOGLE-FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Sedan:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.fade-in');
+
+            function checkPosition() {
+                sections.forEach((section) => {
+                    const position = section.getBoundingClientRect();
+
+                    // If the section is in the viewport, add the 'visible' class
+                    if (position.top < window.innerHeight && position.bottom >= 0) {
+                        section.classList.add('visible');
+                    } else {
+                        section.classList.remove('visible');
+                    }
+                });
+            }
+
+            // Run checkPosition on page load and scroll
+            window.addEventListener('load', checkPosition);
+            window.addEventListener('scroll', checkPosition);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.fade-in-Img');
+
+            function checkPosition() {
+                sections.forEach((section) => {
+                    const position = section.getBoundingClientRect();
+
+                    // If the section is in the viewport, add the 'visible' class
+                    if (position.top < window.innerHeight && position.bottom >= 0) {
+                        section.classList.add('visible');
+                    } else {
+                        section.classList.remove('visible');
+                    }
+                });
+            }
+
+            // Run checkPosition on page load and scroll
+            window.addEventListener('load', checkPosition);
+            window.addEventListener('scroll', checkPosition);
+        });
+    </script>
+
+    <header class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+        <figure>
+            <a href="#">
+                <img src="./images/BiblotekaImeWebLogo-removebg-preview.png" alt="Logo" id="HeaderLogo">
+                <figcaption class="displayFlex justifyContentCenter textColorWhite platypi-uniquifier">Bibloteka-Ime
+                </figcaption>
+            </a>
+        </figure>
+
+        <nav class="displayFlex alignItemsCenter">
+            <ul class="displayFlex alignItemsCenter gap3rem">
+                <li>
+                    <a href="#" class="textColorWhite"><span class="material-symbols-outlined" title="Profile">
+                            account_circle
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="textColorWhite">
+                        <span class="material-symbols-outlined" title="Balance">
+                            account_balance_wallet
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="textColorWhite"><span class="material-symbols-outlined" title="Cart">
+                            shopping_cart
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="textColorWhite"><span class="material-symbols-outlined" title="Saved">
+                            bookmarks
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <div>
+            <a href="#" class="textColorWhite" title="Settings">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+            </a>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="UnderHeaderSection">
+            <article class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                <ul class="displayFlex gap3rem UnderHeaderSectionUl">
+                    <li>
+                        <a href="#" class="sedan-regular textColorGray">LIBRA</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sedan-regular textColorGray">ALBUME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sedan-regular textColorGray">HARTA</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sedan-regular textColorGray">SUVENIRE</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sedan-regular textColorGray">BLOG</a>
+                    </li>
+                </ul>
+
+
+
+                <div class="displayFlex alignItemsCenter gap1rem  UnderHeaderSectionSearchBar">
+                    <input type="search" id="Search" class="UnderHeaderSectionSearch" name="Headersearch"
+                        placeholder="Kerko ndonje liber....">
+                    <label for="Search">
+                        <a href="#"><span class="material-symbols-outlined textColorWhite UnderHeaderSectioSearchIcon"
+                                title="Search">
+                                search
+                            </span>
+                        </a>
+                    </label>
+                </div>
+            </article>
+        </section>
+
+        <section class="MainSection displayFlex justifyContentCenter gap3rem">
+            <article>
+                <div class="marginBottom25px displayFlex alignItemsCenter">
+                    <img src="./images/libra.1.jpg" alt="book1" class="BookImages fade-in-Img">
+                    <p class="platypi-uniquifier fade-in fade-inText textColorWhite">
+                        Libra nga autore shqiptar.
+                    </p>
+                </div>
+
+                <div class="marginBottom25px displayFlex alignItemsCenter">
+                    <img src=" images/libri.2.jpg" alt="book2" class="BookImages fade-in-Img">
+                    <p class="platypi-uniquifier fade-in fade-inText textColorWhite">
+                        Libra artistike shqiptare.
+                    </p>
+                </div>
+
+                <div class="marginBottom25px displayFlex alignItemsCenter">
+                    <img src=" images/libri.3.jpg" alt="book3" class="BookImages fade-in-Img">
+                    <p class="platypi-uniquifier fade-in fade-inText textColorWhite">
+                        Libra nga autore te huaj.
+                    </p>
+                </div>
+
+                <div class="marginBottom25px displayFlex alignItemsCenter">
+                    <img src=" images/libra.4.jpg" alt="book6" class="BookImages fade-in-Img">
+                    <p class="platypi-uniquifier fade-in fade-inText textColorWhite">
+                        Libra artistike nderkombtare.
+                    </p>
+                </div>
+
+                <div class="marginBottom25px displayFlex alignItemsCenter">
+                    <img src="./images/libri.5.jpg" alt="book6" class="BookImages fade-in-Img">
+                    <p class="platypi-uniquifier fade-in fade-inText textColorWhite">
+                        Zhanre te ndryshme.
+                    </p>
+                </div>
+
+                <div class="marginBottom25px displayFlex alignItemsCenter">
+                    <img src="images/libri.6.jpg" alt="book6" class="BookImages fade-in-Img">
+                    <p class="platypi-uniquifier fade-in fade-inText textColorWhite">
+                        Vepra me te lexuara ne Bote.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="BuyBooksSection">
+            <article>
+                <h2 class="marginBottom25px textColorDarkBlue">
+                    Produktet e Sugjeruara
+                </h2>
+
+                <hr>
+
+                <div class="marginBottom25px">
+                    <h3 class="textColorDarkBlue marginBottom25px">
+                        Per Femije
+                    </h3>
+
+                    <div class="displayFlex justifyContentCenter gap3rem">
+                        <div>
+                            <a href="#">
+                                <img src="images/libri.3.jpg" alt="book3" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined" title="Cart">
+                                        shopping_cart
+                                    </span>
+                                    Buy / Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libra.1.jpg" alt="book1" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined" title="Cart">
+                                        shopping_cart
+                                    </span>
+                                    Buy / Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libri.2.jpg" alt="book2" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined" title="Cart">
+                                        shopping_cart
+                                    </span>
+                                    Buy / Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libri7.webp" alt="book2" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined" title="Cart">
+                                        shopping_cart
+                                    </span>
+                                    Buy / Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="marginBottom25px">
+
+                <div class="marginBottom25px">
+                    <h3 class="textColorDarkBlue marginBottom25px">
+                        Per te rritur
+                    </h3>
+
+                    <div class="displayFlex justifyContentCenter gap3rem">
+                        <div>
+                            <a href="#">
+                                <img src="images/libra.4.jpg" alt="book4" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined" title="Cart">
+                                        shopping_cart
+                                    </span>
+                                    Buy / Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libri.5.jpg" alt="book5" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined" title="Cart">
+                                        shopping_cart
+                                    </span>
+                                    Buy / Add to Cart
+                                </button>
+                            </div>
+                        </div class="bookstoBuyImg">
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libri.6.jpg" alt="book6" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined" title="Cart">
+                                        shopping_cart
+                                    </span>
+                                    Buy / Add to Cart
+                                </button>
+                            </div>
+                        </div class="bookstoBuyImg">
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libra.8.jpg" alt="book8" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined" title="Cart">
+                                        shopping_cart
+                                    </span>
+                                    Buy / Add to Cart
+                                </button>
+                            </div>
+                        </div class="bookstoBuyImg">
+                    </div>
+                </div>
+
+                <hr class="marginBottom25px">
+
+                <div class="marginBottom25px">
+                    <h3 class="textColorDarkBlue marginBottom25px">
+                        Me te pelqyerat
+                    </h3>
+
+                    <div class="displayFlex justifyContentCenter gap3rem">
+                        <div>
+                            <a href="#">
+                                <img src="images/libra.1.jpg" alt="book1" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    Add book to Favorites
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libri7.webp" alt="book1" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    Add book to Favorites
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libra.1.jpg" alt="book1" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    Add book to Favorites
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <img src="images/libri.5.jpg" alt="book1" class="bookstoBuyImg">
+                            </a>
+
+                            <div class="displayFlex justifyContentCenter">
+                                <button class="BuyButton displayFlex alignItemsCenter">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    Add book to Favorites
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="displayFlex alignItemsCenter textColorWhite">
+            <figure>
+                <a href="#">
+                    <img src="./images/Bib-removebg-preview.png" alt="logo">
+                </a>
+            </figure>
+
+            <ul class="displayFlex alignItemsCenter gap3rem">
+                <div>
+                    <h4>
+                        Company
+                    </h4>
+
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Media Kit</a>
+                    </li>
+
+                    <li>
+                        <a href="#">In the news</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </div>
+
+                <div>
+                    <h4>
+                        Support
+                    </h4>
+
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#">User Guide</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Examples</a>
+                    </li>
+                </div>
+
+                <div>
+                    <h4>
+                        Policies
+                    </h4>
+
+                    <li>
+                        <a href="#">Comunity Guidlines</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Privacy Policies</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Legal</a>
+                    </li>
+                </div>
+
+                <div>
+                    <h4 class="displayFlex marginBottom25px justifyContentCenter">
+                        Social Media Link
+                    </h4>
+
+                    <div class="displayFlex alignItemsCenter gap1rem">
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="../Ushtrime14/images/facebook.png" alt="Facebook Logo"
+                                    class="footerSocialLogo">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="../Ushtrime14/images/instagram.png" alt="instagram Logo"
+                                    class="footerSocialLogo">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.pinterest.com/">
+                                <img src="../Ushtrime14/images/pinterest.png" alt="Pinterset Logo"
+                                    class="footerSocialLogo">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.twitter.com/">
+                                <img src="../Ushtrime14/images/twitter.png" alt="Twitter Logo" class="footerSocialLogo">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="underFooterDiv textColorGray">
+            <div class="displayFlex alignItemsCenter gap1rem">
+                <p>Terms & Condtisions</p>
+
+                <span>|</span>
+
+                <p>Privacy Policies</p>
+
+                <span>|</span>
+
+                <p>Security</p>
+            </div>
+
+            <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+                <div class="displayFlex alignItemsCenter">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <p>Filan Fisteku, Gjilan, Kosovo</p>
+                </div>
+
+                <div>
+                    <button class="displayFlex alignItemsCenter gap3rem textColorWhite FooterButtonForLanguage">
+                        <p>
+                            English
+                        </p>
+
+                        <div class="expandMooreLessButtons">
+                            <span class="material-symbols-outlined">
+                                expand_less
+                            </span>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="displayFlex alignItemsCenter justifyContentSpaceBetween">
+
+                <div class="displayFlex alignItemsCenter gap1rem">
+                    <span class="material-symbols-outlined">
+                        copyright
+                    </span>
+                    <p>Bibloteka-Ime inc.</p>
+                </div>
+
+                <div>
+                    <h5 class="displayFlex justifyContentCenter marginBottom25px">Find Us In</h5>
+
+                    <div class="displayFlex alignItemsCenter gap1rem">
+                        <a href="https://www.appstore.com/" target="_blank">
+                            <img src="../Ushtrime14/images/appstore.PNG" alt="appstore">
+                        </a>
+
+                        <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                            <img src="../Ushtrime14/images/playstore.PNG" alt="playstore">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
